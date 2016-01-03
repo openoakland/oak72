@@ -2,7 +2,7 @@
 .main-container.home
   = render :partial => "partials/header"
   .page-intro
-    .big-title{:style => "background-image: url(#{"/assets/home-main.jpg"})"}
+    .big-title{:style => "background-image: url(#{"/assets/static/home-main.jpg"})"}
       %h1
         = t(:hero_image_text)
   .questions
@@ -17,7 +17,7 @@
           = t(:why_72)
         %span
           = t(:why_text)
-  .connection{:style => "background-image: url(#{@city.resident_image.url || "assets/placeholder-residents.jpg"})"}
+  .connection{:style => "background-image: url(#{"assets/static/home-secondary.jpg"})"}
     %div
       %h2
         = t(:motto)
