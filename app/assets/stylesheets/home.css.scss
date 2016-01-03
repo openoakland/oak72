@@ -7,7 +7,7 @@
 }
 
 .home .page-intro .big-title {
-	@include retina-image(/assets/placeholder-home, 1020px 538px, jpg);
+	@include retina-image(/assets/static/home-main, 1020px 538px, jpg);
 	background-position: left top;
 	text-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
 }
