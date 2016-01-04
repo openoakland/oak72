@@ -2,7 +2,7 @@
 = javascript_include_tag "home"
 .main-container.plan
   = render :partial => "partials/header"
-  .opening.em-plan{:style => "background-image: url(#{@plan.community_image.url || "assets/placeholder-plan.jpg"})"}
+  .opening.em-plan{:style => "background-image: url(#{"assets/static/plan-main.jpg"})"}
     %h1
       = t(:make_a_plan_with_your_people)
     %div
