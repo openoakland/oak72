@@ -66,7 +66,7 @@ en:
   use_local_networks: "Connect through your local networks."
   use_local_networks_why: "Your neighborhood networks are important in an emergency too—consider the connections you already have—to your yoga studio, craft collective, spiritual groups, or friends in the neighborhood—so you can band together if something happens."
   #Nixle
-  usenixle: "Sign up for Nixle to get txt message updates"
+  usenixle: "Get txt updates from Nixle."
   whynixle: "Sign up for text message updates about what's going on in your neighborhood and throughout Oakland."
   nixle_emergency: "Check your phone for automated updates and text messages."
   #Neighborhood Networks Section
@@ -76,7 +76,7 @@ en:
   my_yoga: "My yoga class"
   my_workplace: "My workplace"
   my_bookclub: "My book club"
-  my_bar: "My coffee shop"
+  my_bar: "My local cafe"
   my_school: "My school"
   my_congregation: "My congregation"
   #Partners Section
