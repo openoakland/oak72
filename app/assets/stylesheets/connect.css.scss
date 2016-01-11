@@ -135,7 +135,7 @@
 
 .full-img-article {
 	@include row();
-	@include retina-image(/assets/static/gardening, 1020px 401px, jpg);
+	@include retina-image(/assets/static/connect-secondary, 1020px 401px, jpg);
 	background-repeat: no-repeat;
 	padding: 0 30px;
 	text-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
@@ -251,25 +251,11 @@
 			}
 
 			#red-cross {
-				@include retina-image(/assets/static/redcross, 258px 61px);
+				@include retina-image(/assets/static/redcross, 227px 74px);
 				background-position-y: 10px;
 			}
 
-			#nen {
-				@include retina-image(/assets/static/nen, 142px 67px);
-			}
 
-			#nert {
-				@include retina-image(/assets/static/nert, 69px 75px);
-			}
-
-			#aux {
-				@include retina-image(/assets/static/auxiliary, 72px 72px);
-			}
-
-			#council {
-				@include retina-image(/assets/static/interfaith, 72px 72px);
-			}
 		}
 	}
 

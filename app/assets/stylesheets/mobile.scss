@@ -2334,7 +2334,7 @@ $mobile-padding: 23px;
 	}
 
 	.full-img-article {
-		@include retina-image(/assets/mobile/gardening, 320px 514px, jpg);
+		@include retina-image(/assets/mobile/connect-secondary, 320px 514px, jpg);
 	}
 
 	// .home .page-intro .big-title {
@@ -2358,34 +2358,7 @@ $mobile-padding: 23px;
 	// 	@include retina-image(/assets/mobile/make-plan-header, 320px 273px, jpg);
 	// }
 
-	.learn-more ul li #red-cross {
-		@include retina-image(/assets/mobile/redcross, 176px 45px);
-		background-size: auto;
-		height: 53px;
-	}
 
-	.learn-more ul li #nen {
-		@include retina-image(/assets/mobile/nen, 85px 40px);
-		background-size: auto;
-		height: 40px;
-	}
 
-	.learn-more ul li #nert {
-		@include retina-image(/assets/mobile/nert, 54px 58px);
-		background-size: auto;
-		height: 58px;
-	}
-
-	.learn-more ul li #aux {
-		@include retina-image(/assets/mobile/auxiliary, 54px 54px);
-		background-size: auto;
-		height: 54px;
-	}
-
-	.learn-more ul li #council {
-		@include retina-image(/assets/mobile/interfaith, 54px 54px);
-		background-size: auto;
-		height: 54px;
-	}
 
 }
