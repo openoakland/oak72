@@ -80,7 +80,7 @@
 	a.prepare-things {
 		@include retina-image(/assets/static/prepare-supplies-1, 960px 420px, jpg);
 	}
-	
+
 
 	h2 {
 		margin: 1.5rem 0 0;
@@ -224,7 +224,7 @@ a.checklist:before {
 		margin-top: 4rem;
 		margin-bottom: 3.5rem;
 	}
-	
+
 	h3:before {
 		font-family: 'city72icons';
 		font-size: 2.7rem;
@@ -256,8 +256,15 @@ a.checklist:before {
 
 /* SUPPLIES */
 
+
 .supplies {
 	@include retina-image(/assets/static/supplies_header, 750px 417px, jpg);
+
+	h1 {
+	margin-top: 2.2rem;
+	text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
+	padding: 190px 90px 4px 29px;
+	}
 
 	div {
 
@@ -266,6 +273,7 @@ a.checklist:before {
 			line-height: 1.625rem;
 			margin-top: 4rem;
 		}
+
 	}
 }
 
@@ -415,7 +423,7 @@ a.checklist:before {
 		border-width: 0.85rem;
 		left: 50%;
 		margin-left: -0.85rem;
-		
+
 	}
 
 	&:after{
@@ -504,7 +512,7 @@ a.checklist:before {
 .kits {
 	padding: 40px 30px;
 	margin-bottom: 7rem;
-} 
+}
 
 .kits h2, .kits p {
 	margin-left: 1.8rem;

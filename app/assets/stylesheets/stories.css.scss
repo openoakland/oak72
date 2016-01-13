@@ -3,7 +3,7 @@
   .intro-mobile {
     display: none;
   }
-  
+
   .opening {
     @include retina-image(/assets/placeholder/story-1, 750px 417px, jpg);
     background-size: contain;
@@ -11,6 +11,12 @@
     div {
       float: left;
       margin-left: 0;
+    }
+
+    h1 {
+    margin-top: 2.2rem;
+    text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
+    padding: 190px 185px 4px 29px;
     }
 
     .story-about {
@@ -50,12 +56,12 @@
       line-height: 1.6875rem;
       font-size: 1.1875rem;
       margin-top: 0.2rem;
-    }    
+    }
   }
 }
 
 .story-list {
-  
+
   @include clearfix();
   margin-top: 2rem;
   padding: 0 30px;
@@ -124,7 +130,7 @@
     margin: 0;
     @include col-title();
   }
-  
+
   p {
     margin: 0;
     color: #9F9F9F;
@@ -234,7 +240,7 @@
 }
 
 .story-detail .intro-video {
-  
+
   iframe {
     width: 100%;
     height: 540px;
@@ -242,7 +248,7 @@
 }
 
 .story-detail {
-  
+
   .intro-row, {
     padding: 0 30px;
   }
@@ -267,7 +273,7 @@
 .story-description {
   margin-top: 1.8rem;
 
-  h3 { 
+  h3 {
     margin-bottom: 0;
     color: $dark-grey;
   }
