@@ -7,24 +7,26 @@ Included in this guide:
 
 **OAK72 was derived from City72**. For more information about the toolkit, visit [toolkit.sf72.org](http://toolkit.sf72.org). The main differences between OAK72 and City72 are:
 
-• OAK72 is abstracted so that all the strings (lines of text) come from a locale file, this is the first step in allowing toggling between different languages. Currently, the only complete file is English (en.yml). Other files exist and the site is a few features (and a significant contribution from translators) away from being viewable in Chinese, Spanish, English, Vietnamese and Filipino. NOTE: See the Translation Features issue for more details on this effort.
- 
-• OAK72 is minimally reliant on a content management system (CMS). Many sections of the CMS assumed that the site would exist in English only. All of those sections are no longer connected to the site and have been commented out from the views of the CMS and replaced with brief instructions on where to make changes.
+• OAK72 is abstracted so that all the text strings come from a locale file. This change was the first step in allowing viewers to toggle between different languages. The site is a [few significant features](https://github.com/openoakland/oak72/issues/11) away from being viewable in multiple languages.
 
-• OAK72 is intended as a guide for getting prepared and connected. Any reference to checking back after an emergency has been changed or removed.
+• OAK72 is less reliant on a content management system (CMS). Many sections of the CMS assumed that the site would exist in English only. Many sections of the CMS have been replaced with brief instructions on where in the codebase to make changes.
 
-• City72 currently assumes that the site you are creating is for a city, OAK72 could easily be adapted for a county, organization or other community. NOTE: Deriving a site from OAK72 definitely requires some basic development skills (using Git, setting up a development environment, and making changes with a code editor).
+• OAK72 is intended as a guide for getting prepared and connected. Any reference to checking back after an emergency has been removed.
 
-• In OAK72, the main page headings are aligned in the lower right of the main image to make room for faces in photos. In City72, the headings are centered over the photo.
+• City72 currently assumes that the site you are creating is for a city. Since all of the text is editable, OAK72 could more readily be adapted for a county, organization or other community.
 
-• OAK72 requires more technical know-how but offers more flexibility in terms of what can be customized. For instance, the images are not editable via the CMS, instead, they have very logical file names and should be replaced at the file level. While this is not as easy for anybody to do, it lets the photographer and designer have more control over the crop of images and the level to which they are optimized.
+• In OAK72, the main page headings are aligned in the lower right of the main image (instead of centered over it) to make room for faces in photos.
 
-• Much of the content on OAK72 is only applicable to Oakland (e.g. portraits of residents). Any team wishing to fork OAK72 into another community preparedness site should prioritize the gathering of relevant photography. The same holds true for City72, except all of the content on City72 is unrestricted and aims to be more universal.
+• OAK72 requires more technical know-how but offers more flexibility in terms of what can be customized. 
 
+• Much of the content on OAK72 is only applicable to Oakland (e.g. portraits of residents). Any team wishing to fork OAK72 into another community preparedness site should prioritize the gathering of relevant photography.
+
+
+---
 
 # Deploy on Heroku
 
-You can deploy the app on Heroku by clicking the button below:
+First, fork this code base. Then from your new GitHub repository you can deploy the app on Heroku by clicking the button below:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
