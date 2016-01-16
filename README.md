@@ -7,7 +7,7 @@ Included in this guide:
 
 **OAK72 was derived from City72**. For more information about the toolkit, visit [toolkit.sf72.org](http://toolkit.sf72.org). The main differences between OAK72 and City72 are:
 
-• OAK72 is abstracted so that all the strings (lines of text) come from a locale file, this is the first step in allowing toggling between different languages. Currently, the only complete file is English (en.yml) but other files exist and the site is a few features (and a significant contribution from translators) away from being viewable in Chinese, Spanish, English, Vietnamese and Filipino. NOTE: See the Translation Features issue for more details on this effort.
+• OAK72 is abstracted so that all the strings (lines of text) come from a locale file, this is the first step in allowing toggling between different languages. Currently, the only complete file is English (en.yml). Other files exist and the site is a few features (and a significant contribution from translators) away from being viewable in Chinese, Spanish, English, Vietnamese and Filipino. NOTE: See the Translation Features issue for more details on this effort.
  
 • OAK72 is minimally reliant on a content management system (CMS). Many sections of the CMS assumed that the site would exist in English only. All of those sections are no longer connected to the site and have been commented out from the views of the CMS and replaced with brief instructions on where to make changes.
 
