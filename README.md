@@ -5,7 +5,7 @@ Included in this guide:
 
 # About OAK72
 
-**OAK72 was derived from City72**. For more information about the toolkit, visit toolkit.sf72.org. The main differences between OAK72 and City72 are:
+**OAK72 was derived from City72**. For more information about the toolkit, visit toolkit.sf72.org (http://toolkit.sf72.org). The main differences between OAK72 and City72 are:
 
 • OAK72 is abstracted so that all the strings (lines of text) come from a locale file, this is the first step in allowing toggling between different languages. Currently, the only complete file is English (en.yml) but other files exist and the site is a few features (and a significant contribution from translators) away from being viewable in Chinese, Spanish, English, Vietnamese and Filipino. NOTE: See the Translation Features issue for more details on this effort.
  
@@ -13,7 +13,7 @@ Included in this guide:
 
 • OAK72 is intended as a guide for getting prepared and connected. Any reference to checking back after an emergency has been changed or removed.
 
-• City72 currently assumes that the site you are creating is for a city, OAK72 could easily be adapted for a county, organization or other community. NOTE: Deriving a site from OAK72 definitely requires some basic development skills (using Git, setting up a development envirtonment, and making changes with a code editor).
+• City72 currently assumes that the site you are creating is for a city, OAK72 could easily be adapted for a county, organization or other community. NOTE: Deriving a site from OAK72 definitely requires some basic development skills (using Git, setting up a development environment, and making changes with a code editor).
 
 • In OAK72, the main page headings are aligned in the lower right of the main image to make room for faces in photos. In City72, the headings are centered over the photo.
 
