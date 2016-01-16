@@ -26,11 +26,15 @@ Included in this guide:
 
 # Deploy on Heroku
 
-First, fork this code base. Then from your new GitHub repository you can deploy the app on Heroku by clicking the button below:
+Deploying to Heroku is the quickest way to launch an instance this site that you can adapt for your own community.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+1. [Fork OAK72](https://github.com/openoakland/oak72#fork-destination-box). 
 
-If you don't have a Heroku account, you will be prompted to create one.
+2. From your new GitHub repository, deploy to heroku:  
+
+     [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+3. Name your app and give it a minute or two to deploy, you will then see a link to view it. If you don't have a Heroku account, you will be prompted to create one and verify your identity with a credit card. 
 
 ## Add-ons
 
