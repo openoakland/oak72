@@ -1,4 +1,4 @@
-# Sample localization file for English. Add more files in this directory for other locales.
+# Localization file for English.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 # this is the ENGLISH version
@@ -7,7 +7,7 @@ en:
   hello: "Hello"
 
   #city72 site name
-  name72: "GNV"
+  name72: "*GNV*"
 
   #===========================#
   #Navigation: Header
@@ -24,13 +24,13 @@ en:
   #===========================#
   #Home Landing Page Strings
   #===========================#
-  hero_image_text: "GNV is Gainesville's hub for emergency preparedness."
-  what_is: "What is GNV?"
-  what_text: "GNV is your hub for emergency preparedness. You’ll find information about what to do in an emergency, simple steps to get connected, and useful guides to help you get prepared. Share OAK72 with a friend—and help your loved ones and your community get prepared."
+  hero_image_text: "*GNV* is Gainesville's hub for emergency preparedness."
+  what_is: "What is *GNV*?"
+  what_text: "*GNV* is your hub for emergency preparedness. You’ll find information about what to do in an emergency, simple steps to get connected, and useful guides to help you get prepared. Share *GNV* with a friend—and help your loved ones and your community get prepared."
   why_72: "Why 72?"
   why_text: "In a serious emergency, services will be impacted, so a basic rule of thumb is for people to be able to take care of each other for 72 hours before help arrives. That’s just three days—think of it as a long weekend—or nine meals."
   motto: "We believe in connection, not catastrophe."
-  motto_explained: "Actual emergencies look more like people coming together than cities falling apart. OAK72 is about prompting members of the community to get connected before an emergency—so we can be that much better off when something happens."
+  motto_explained: "Actual emergencies look more like people coming together than cities falling apart. *GNV* is about prompting members of the community to get connected before an emergency—so we can be that much better off when something happens."
   good_news: "Good news. You’re more prepared than you think."
   learn_more: "Learn more..."
   gc_explained: "Make the most of your existing networks of friends, family, neighbors, and colleagues—so you can get help, and help others."
@@ -47,8 +47,8 @@ en:
   connectmain: "When disaster strikes, we come together to help each other. Getting prepared is about knowing your neighbors, saying hi to the regulars at the local market, and staying in touch with family and friends—both digitally and in person."
   networks: "Connect through your digital networks."
   inevent: "In the event of an emergency, we all turn to our existing tools and networks—many of which are digital. Think about your connections and the online communities you’re already a part of, so you can share updates and information when something happens."
-  learnabout: "Learn about OAK72."
-  learnaboutdetails: "Find out the story behind the creation of OAK72."
+  learnabout: "Learn about *GNV*."
+  learnaboutdetails: "Find out the story behind the creation of *GNV*."
   aboutus: "About Us"
   useface: "Use your Facebook account"
   now: "Now:"
@@ -58,8 +58,8 @@ en:
   face_emergency: "Post your status to Facebook to let friends and family know you are ok."
   use_twitter: "Check updates on Twitter"
   use_twitter_now: "Add emergency accounts to your Twitter feed, to stay informed. Some of our favorites"
-  use_twitter_emergency: 'Post about yourself and your area. Use #OAK72 to connect related tweets.'
-  city72_tweet_tag: "OAK72"
+  use_twitter_emergency: 'Post about yourself and your area. Use #*GNV* to connect related tweets.'
+  city72_tweet_tag: "*GNV*"
   use_cloud: "Save documents to a cloud service"
   use_cloud_now: "Scan personal documents like your driver’s license, passport, and birth certificate. Save digital copies on Dropbox, Box, or another cloud service."
   use_cloud_emergency: "Access your documents remotely in case you can't get home. Know that there is a safe copy in the cloud."
@@ -67,7 +67,7 @@ en:
   use_local_networks_why: "Your neighborhood networks are important in an emergency too—consider the connections you already have—to your yoga studio, craft collective, spiritual groups, or friends in the neighborhood—so you can band together if something happens."
   #Nixle
   usenixle: "Get txt updates from Nixle."
-  whynixle: "Sign up for text message updates about what's going on in your neighborhood and throughout Oakland."
+  whynixle: "Sign up for text message updates about what's going on in your neighborhood and throughout Gainesville."
   nixle_emergency: "Check your phone for automated updates and text messages."
   #Neighborhood Networks Section
   neighborhood_networks: "Connect through your local networks."
@@ -106,6 +106,7 @@ en:
   #===========================#
   #Supply Items
   #===========================#
+  fyi_supply: "None of these views exist yet"
 
   # #Essentials
   water: "Water"
@@ -161,7 +162,7 @@ en:
   # : "Get inspired by members of our community."
   # : "Hearing stories from people that have lived through an emergency is a powerful way to learn. You are probably more prepared than you think."
   a_personal_look: "A personal look at emergencies and connection."
-  watch_personal_stories: "Watch stories of people who have lived through disasters—and those who are already fostering connections in Oakland. No matter your situation, chances are, there’s someone like you with wisdom to share."
+  watch_personal_stories: "Watch stories of people who have lived through disasters—and those who are already fostering connections in Gainesville. No matter your situation, chances are, there’s someone like you with wisdom to share."
 
   #STORY TITLES AND CAPTIONS
   # : ""
@@ -171,14 +172,10 @@ en:
   # : ""
   # : ""
   # : ""
-  #DO NOT TRANSLATE PLACEHOLDERS
-  placeholder_story_quote : "Lorem ipsum dolor sit amet."
-  placeholder_story_location: "Location"
-  placeholder_story_name: "Tess Ting"
 
   #CITY STATEMENT
   our_city: "Our city."
-  city_statement: "Oakland is ..."
+  city_statement: "Gainesville is ..."
   we_believe: "We believe in connection, not catastrophe."
 
 
@@ -197,34 +194,33 @@ en:
   agree_on_a_place: "Agree on a place to meet."
   how_about_a: "How about a park? A landmark? Don’t choose a house—in case it’s inaccessible."
   learn_tips: "Learn tips."
-  read_and_print: "Read and print our Quake Guide to learn a few easy steps to stay safe."
-  #note: the above string needs to integrate a link to the Quake Guide
+  read_and_print: "Read and print our Hurricane Guide to learn a few easy steps to stay safe."
+  #note: the above string needs to integrate a link to the Hurricane Guide
 
   #===========================#
   #Make a Plan : Emergency
   #===========================#
-  guide_title: "Quake Guide"
+  guide_title: "Hurricane Guide"
   print_full_guide: "Print Full Guide"
-  before_event: ""
-  #translation note: The before_event string above was intentionally left empty (it is left in for hurricanes, tornados, etc)
-  during_event: "During a Quake"
-  after_event: "After a Quake"
+  before_event: "Before a Hurricane"
+  during_event: "During a Hurricane"
+  after_event: "After a Hurricane"
   print_guide: "Print Full Guide"
 
   #===========================#
   #About Us Page
   #===========================#
-  for_us_by_us: "OAK72 is for us, by us."
-  our_mission : "Our mission is to enable Oaklanders to get prepared. OAK72 was created by OpenOakland & the City of Oakland, with the belief that the best way to do this is to get connected to each other, share resources, and start re-imagining the way we think about emergencies."
+  for_us_by_us: "*GNV* is for us, by us."
+  our_mission : "Our mission is to enable the people of Gainesville to get prepared. *GNV* was created by OpenGainesville & the City of Gainesville, with the belief that the best way to do this is to get connected to each other, share resources, and start re-imagining the way we think about emergencies."
   who : "Who"
-  who_p1 : "For Oakland, by Oakland."
-  who_p2 : "Oakland is like no other place – and this platform is tailored to the particular quirks, context and people that make up our city."
+  who_p1 : "For Gainesville, by Gainesville."
+  who_p2 : "Gainesville is like no other place – and this platform is tailored to the particular quirks, context and people that make up our city."
   what : "What"
-  what_p1 : "A people-centered vision of emergency preparedness. Nobody likes to think about emergencies, but OAK72 takes the mystery out of the process of getting prepared. We do this by telling human stories and providing tools that fit into your daily life."
-  what_p2 : "OAK72 is not a new social network. It’s a platform designed to plug into your existing networks – whether social or digital."
+  what_p1 : "A people-centered vision of emergency preparedness. Nobody likes to think about emergencies, but *GNV* takes the mystery out of the process of getting prepared. We do this by telling human stories and providing tools that fit into your daily life."
+  what_p2 : "*GNV* is not a new social network. It’s a platform designed to plug into your existing networks – whether social or digital."
   why : "Why"
   why_p1 : "A little now will mean a lot later; connecting with your network, downloading an app, or watching a video is the first step towards being better prepared for an emergency."
-  why_p2 : "Oakland, along with other cities across the country, is leading the charge for a different kind of emergency prep. Let’s start the movement."
+  why_p2 : "Gainesville, along with other cities across the country, is leading the charge for a different kind of emergency prep. Let’s start the movement."
   image_credits : "Image Credits"
   # : "Some images generously provided through the Creative Commons licensing format by:"
   # : ""
@@ -234,8 +230,8 @@ en:
   #===========================#
   #Map & Updates Page(s)
   #===========================#
-  em_home_title: "OAK72 - In an Emergency"
-  in_an_emergency: "Use this map and these Twitter feeds to see what's going on around Oakland."
+  em_home_title: "*GNV* - In an Emergency"
+  in_an_emergency: "In an emergency, this page will be your real-time information hub."
   you_will_find: "You’ll find official updates, partner updates, traffic information, and a crisis map to navigate city resources. Tour this Emergency Mode to better understand how to use it in the event of an emergency."
   map_guide: "Map Guide"
   expand_map: "Expand Map"
