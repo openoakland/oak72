@@ -77,8 +77,8 @@
 	color: $text-grey;
 
 	li {
-		@include span-columns(6);
-		@include omega(2n);
+		@include span-columns(4);
+		@include omega(3n);
 		padding: 6.5rem 3.3rem 0 0;
 		position: relative;
 		margin-bottom: 3rem;

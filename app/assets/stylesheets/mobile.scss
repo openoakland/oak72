@@ -134,20 +134,21 @@ $mobile-padding: 23px;
 	.logo-mobile {
 		display: block;
 		position: relative;
-		width: 46px;
-		height: 44px;
-		left: 50%;
-		margin: 0 0 0 -22px;
-		padding: 0.3rem 0;
 		text-align: center;
+		padding: 7px 0;
 	}
 
-	.logo-mobile:after {
-		font-family: "city72icons";
-		font-size: 1.4rem;
-		color: $mobile-gray-title;
-		content: "O";
+	.logo-mobile img {
+		margin: 0 30px;
+
 	}
+
+	// .logo-mobile:after {
+	// 	font-family: "city72icons";
+	// 	font-size: 1.4rem;
+	// 	color: $mobile-gray-title;
+	// 	content: "O";
+	// }
 
 	.main-nav {
 		display: none;

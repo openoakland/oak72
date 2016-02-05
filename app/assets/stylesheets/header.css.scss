@@ -5,31 +5,32 @@
 }
 
 $header-height: 40px;
-.i18n-change-bar {
-  border-bottom: solid 1px $light-grey;
-  min-height: $header-height;
-  position: relative;
-  .change-icon {
-    cursor: pointer;
-    float: right;
-    max-height: $header-height;
-    img {
-      max-height: $header-height;
-    }
-  }
 
-  .language-menu {
-    display: none;
-    position: absolute;
-    opacity: 0.8;
-    background-color: grey;
-    height: 50px;
-    width: 10%;
-    z-index: 2;
-    top: 110%;
-    left: 90%;
-  }
-}
+// .i18n-change-bar {
+//   border-bottom: solid 1px $light-grey;
+//   min-height: $header-height;
+//   position: relative;
+// .change-icon {
+//     cursor: pointer;
+//     float: right;
+//     max-height: $header-height;
+//     img {
+//       max-height: $header-height;
+//     }
+//   }
+
+//   .language-menu {
+//     display: none;
+//     position: absolute;
+//     opacity: 0.8;
+//     background-color: grey;
+//     height: 50px;
+//     width: 10%;
+//     z-index: 2;
+//     top: 110%;
+//     left: 90%;
+//   }
+// }
 
 #logo {
 	@include span-columns(3.37061107);
@@ -52,15 +53,15 @@ $header-height: 40px;
 	display: none;
 }
 
-.text-logo {
-	display: block;
-	font-family: "misobold";
-	text-transform: uppercase;
-	font-size: 4.5rem;
-	margin: -1.3rem 0;
-	color: $highlight-dark;
-	letter-spacing: 4px;
-}
+// .text-logo {
+// 	display: block;
+// 	font-family: "misobold";
+// 	text-transform: uppercase;
+// 	font-size: 4.5rem;
+// 	margin: -1.3rem 0;
+// 	color: $highlight-dark;
+// 	letter-spacing: 4px;
+// }
 
 .main-nav > li {
 	@include span-columns(2);
@@ -100,7 +101,7 @@ $header-height: 40px;
 
 	li.active {
       	background-color: lighten( $light-grey, 5% );
-		
+
 		a {
       		color: $dark-grey;
 		}
@@ -108,7 +109,7 @@ $header-height: 40px;
 
 	li:hover {
       	background-color: lighten( $light-grey, 7.5% );
-		
+
 		a {
       		color: $dark-grey;
 		}
@@ -128,7 +129,7 @@ $header-height: 40px;
 			font-family: 'city72icons';
 			content: 's';
 			font-size: 0.8em;
-			
+
 		}
 
 		span {

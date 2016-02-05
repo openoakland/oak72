@@ -1,7 +1,7 @@
 = provide(:title, 'About Us')
 .main-container.about
 	= render :partial => "partials/header"
-	.opening.about-intro{:style => ("background-image: url(#{@about.image.url})" unless @about.image.blank?)}
+	.opening.about-intro
 		%h1
 			= t(:for_us_by_us)
 		%div
