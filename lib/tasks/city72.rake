@@ -414,11 +414,7 @@ namespace :city72 do
           moment_type: :after,
           title: 'Practice Fire Safety.',
           description: 'Use battery-powered flashlights in the dark. DO NOT use candles, in order to prevent fires.',
-        }, {
-          moment_type: :after,
-          title: 'Test',
-          description: 'testing',
-        }
+        },
       ]
     )
     if status.valid?
