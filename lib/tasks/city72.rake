@@ -462,10 +462,6 @@ namespace :city72 do
           moment_type: :after,
           title: 'Avoid standing water of any kind.',
           description: 'Standing water may be electrically charged from underground or downed power lines.',
-        }, {
-          moment_type: :after,
-          title: 'Test',
-          description: 'testing',
         }
       ]
     )
