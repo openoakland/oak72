@@ -260,3 +260,15 @@ en:
   finish: "Finish"
   next: "Next"
 
+
+  #===========================#
+  #Footer Text
+  #===========================#
+
+  footer_text: "Brought to you by the City of Gainesville, in partnership with the people of Gainesville."
+  find_out_more: "Find out more"
+  about_us: "About Us"
+  contact_us: "Contact Us"
+  city72_toolkit: "City72 Toolkit"
+  resources_and_partners: "Resources and Partners"
+  spread_the_word: "Spread the word"
