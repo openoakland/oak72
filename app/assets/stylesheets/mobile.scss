@@ -135,11 +135,14 @@ $mobile-padding: 23px;
 		display: block;
 		position: relative;
 		text-align: center;
+		margin: auto;
+		width: 92px;
+		height: 44px;
 		padding: 7px 0;
 	}
 
 	.logo-mobile img {
-		margin: 0 30px;
+		margin: 0 0px;
 
 	}
 
@@ -350,7 +353,7 @@ $mobile-padding: 23px;
 	}
 
 	.connection {
-		> div {
+		> div.down-arrow {
 			width: 100%;
 			padding: 0;
 			background-color: transparent;
@@ -373,6 +376,7 @@ $mobile-padding: 23px;
 			}
 
 			&:before {
+			  display: none;
 				right: 23px;
 				left: auto;
 				font-size: 1.5rem;
