@@ -59,7 +59,7 @@
 	background-repeat: no-repeat;
 	position: relative;
 
-	div {
+	div.down-arrow {
 		@include span-columns(4.2);
 		@include icon($highlight,3.5rem,$arrow,#FFF,370px,290px);
 		color: #FFF;

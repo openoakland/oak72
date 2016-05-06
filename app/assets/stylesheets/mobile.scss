@@ -353,7 +353,7 @@ $mobile-padding: 23px;
 	}
 
 	.connection {
-		> div {
+		> div.down-arrow {
 			width: 100%;
 			padding: 0;
 			background-color: transparent;
@@ -376,6 +376,7 @@ $mobile-padding: 23px;
 			}
 
 			&:before {
+			  display: none;
 				right: 23px;
 				left: auto;
 				font-size: 1.5rem;
