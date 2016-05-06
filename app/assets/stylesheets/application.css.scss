@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5 {
 
 $gutter: 30px;
 $border-box-sizing: false;
-$mobile: new-breakpoint(max-width 480px 4);
+$mobile: new-breakpoint(max-width 955px 4);
 
 h2 {font-size: 2.125rem; font-family: $font-bold;}
 h3 {font-size: 1.5rem; font-family: $font-medium;}
