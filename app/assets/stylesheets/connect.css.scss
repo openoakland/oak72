@@ -116,19 +116,19 @@
 	li.facebook {
 		@include icon(#FFF,3.2rem,$facebook-icn,$highlight,0,0);
 	}
-	// li.airbnb {
-	// 	@include icon(#FFF,3.2rem,$airbnb-icn,$highlight,0,0);
-	// }
+	li.airbnb {
+		@include icon(#FFF,3.2rem,$airbnb-icn,$highlight,0,0);
+	}
 	li.twitter {
 		@include icon(#FFF,3.2rem,$twitter-icn,$highlight,0,0);
 	}
-	// li.neighbors {
-	// 	@include icon(#FFF,3.2rem,$neighbors-icn,$highlight,0,0);
-	// }
+	li.nextdoor {
+		@include icon(#FFF,3.2rem,$neighbors-icn,$highlight,0,0);
+	}
 	li.drive {
 		@include icon(#FFF,3.2rem,$drive-icn,$highlight,0,0);
 	}
-	li.nixle {
+	li.txt_updates {
 		@include icon(#FFF,3.2rem,$nixle-icn,$highlight,0,0);
 	}
 }

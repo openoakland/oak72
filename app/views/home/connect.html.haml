@@ -64,21 +64,46 @@
             <br/>
           =t(:use_cloud_emergency)
 
-
-      %li.nixle
+      %li.nextdoor
         %h3
-          = t(:usenixle)
-        %p.now
+          =t(:use_nextdoor)
+        %p
           %strong
             =t(:now)
-            <br/>
-          =t(:whynixle)
+          =t(:use_nextdoor_now)
         %p
           %strong
             =t(:in_an_emergency_heading)
             <br/>
-          =t(:nixle_emergency)
-        %a{:href => "https://nixle.com/city/ca/oakland/", :target => "_blank"}
+          =t(:use_nextdoor_emergency)
+
+      %li.airbnb
+        %h3
+          =t(:use_airbnb)
+        %p
+          %strong
+            =t(:now)
+          =t(:use_airbnb_now)
+        %p
+          %strong
+            =t(:in_an_emergency_heading)
+            <br/>
+          =t(:use_airbnb_emergency)
+
+      %li.txt_updates
+        %h3
+          = t(:use_txt_updates)
+        %p.now
+          %strong
+            =t(:now)
+            <br/>
+          =t(:why_txt_updates)
+        %p
+          %strong
+            =t(:in_an_emergency_heading)
+            <br/>
+          =t(:txt_updates_emergency)
+        %a{:href => "http://public.coderedweb.com/cne/en-US/6EF661CA2EF3", :target => "_blank"}
           =t(:start_now)
 
 
