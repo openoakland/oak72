@@ -1,6 +1,7 @@
 = provide(:title, 'About Us')
 .main-container.about
 	= render :partial => "partials/header"
+
 	.opening.about-intro
 		%h1
 			= t(:for_us_by_us)
@@ -33,32 +34,25 @@
 			%p
 				= t(:why_p2)
 
-	- if !@about.photographer_1.blank?
-		.image-credits
+	.image-credits
+		%div
 			%h2
 				= t(:image_credits)
-			%p
-				Stephen Taxiera
+			%ul
+				%li
+					%p
+						= t(:photographer_1)
+						-# href='{{https://www.flickr.com/photos/64788029@N03/16160905106}}
+				%li
+					%p
+						= t(:photographer_2)
+						-# https://www.flickr.com/photos/29800336@N03/9673165616
+				%li
+					%p
+						= t(:photographer_3)
+				%li
+					%p
+						= t(:photographer_4)
 
 
-
-				-# Some images generously provided through the Creative Commons licensing format by:
-				-# - if !@about.photographer_1.blank?
-				-# 	= link_to @about.photographer_1, @about.photographer_1_url, target: '_blank'
-				-# - if !@about.photographer_2.blank?
-				-# 	,
-				-# 	= 'and' if @about.photographer_3.blank?
-				-# 	= link_to @about.photographer_2, @about.photographer_2_url, target: '_blank'
-				-# - if !@about.photographer_3.blank?
-				-# 	,
-				-# 	= 'and' if @about.photographer_4.blank?
-				-# 	= link_to @about.photographer_3, @about.photographer_3_url, target: '_blank'
-				-# - if !@about.photographer_4.blank?
-				-# 	,
-				-# 	= 'and' if @about.photographer_5.blank?
-				-# 	= link_to @about.photographer_4, @about.photographer_4_url, target: '_blank'
-				-# - if !@about.photographer_5.blank?
-				-# 	, and
-				-# 	= link_to @about.photographer_5, @about.photographer_5_url, target: '_blank'
-				-# = "."
 	= render :partial => "partials/footer"
