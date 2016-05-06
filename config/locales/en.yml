@@ -53,23 +53,31 @@ en:
   useface: "Use your Facebook account"
   now: "Now:"
   #translation note: get_connected string already defined
+  #Facebook
   whyface: "Create a Facebook group with your inner circle so you can easily send messages, share supplies, and make a plan together."
   in_an_emergency_heading: "In an emergency"
   face_emergency: "Post your status to Facebook to let friends and family know you are ok."
+  #Twitter
   use_twitter: "Check updates on Twitter"
   use_twitter_now: "Add emergency accounts to your Twitter feed, to stay informed. Some of our favorites"
   use_twitter_emergency: 'Post about yourself and your area. Use #*GNV* to connect related tweets.'
   city72_tweet_tag: "*GNV*"
+  #Cloud Service
   use_cloud: "Save documents to a cloud service"
   use_cloud_now: "Scan personal documents like your driver’s license, passport, and birth certificate. Save digital copies on Dropbox, Box, or another cloud service."
   use_cloud_emergency: "Access your documents remotely in case you can't get home. Know that there is a safe copy in the cloud."
+  #Nextdoor
+  use_nextdoor: "Meet your neighbors on Nextdoor"
+  use_nextdoor_now: "Sign up for Nextdoor to meet your neighbors and create a community disaster preparedness plan."
+  use_nextdoor_emergency: "Log onto Nextdoor to share local information and resources with people who live near you."
+  #AirBnB
+  use_airbnb: "Sign up for Airbnb"
+  use_airbnb_now: "Create an AirBnB proﬁle so you are ready to ﬁnd or share a place to stay if anything happens."
+  use_airbnb_emergency: "Find a place to stay, or share your place with those in need."
+
+  #Neighborhood Networks Section
   use_local_networks: "Connect through your local networks."
   use_local_networks_why: "Your neighborhood networks are important in an emergency too—consider the connections you already have—to your yoga studio, craft collective, spiritual groups, or friends in the neighborhood—so you can band together if something happens."
-  #Nixle
-  usenixle: "Get txt updates from Nixle."
-  whynixle: "Sign up for text message updates about what's going on in your neighborhood and throughout Gainesville."
-  nixle_emergency: "Check your phone for automated updates and text messages."
-  #Neighborhood Networks Section
   neighborhood_networks: "Connect through your local networks."
   neighborhood_networks_why: "Your neighborhood networks are important in an emergency too—consider the connections you already have—to your yoga studio, craft collective, spiritual groups, or friends in the neighborhood—so you can band together if something happens."
   how_to_connect: "How to Connect"
