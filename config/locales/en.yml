@@ -55,7 +55,7 @@ en:
   #translation note: get_connected string already defined
   #Facebook
   whyface: "Create a Facebook group with your inner circle so you can easily send messages, share supplies, and make a plan together."
-  in_an_emergency_heading: "In an emergency"
+  in_an_emergency_heading: "In an emergency:"
   face_emergency: "Post your status to Facebook to let friends and family know you are ok."
   #Twitter
   use_twitter: "Check updates on Twitter"
