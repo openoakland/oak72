@@ -15,7 +15,7 @@
 		h1 {
 			margin-top: 2.5rem;
 			text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
-			padding: 190px 130px 4px 29px;
+
 		}
 
 		div {
@@ -38,7 +38,7 @@
 
 .meet-up {
 	@include row();
-	margin: 3.75rem 0 6rem;
+	margin: 2.75rem 0 5rem;
 
 	h2,
 	p {

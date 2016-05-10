@@ -465,16 +465,7 @@ $mobile-padding: 23px;
 	.opening {
 		// margin-top: 44px;
 
-		h1 {
-			@include span-columns(4);
-			font-size: 2rem;
-			font-family: $font-bold;
-			line-height: 1.1;
-			padding: 75px $mobile-padding 0;
-			height: 222px;
-			text-align: center;
-		}
-
+		background-size: cover;
 		div {
 			@include span-columns(4);
 			height: auto;
@@ -695,13 +686,10 @@ $mobile-padding: 23px;
 	.opening.supplies {
 		background-position-x: 0;
 
-		 h1 {
-		 	padding-bottom: 167px;
-		 }
 	}
 
 	.action-bar {
-		margin-top: 36px;
+		margin-top: 0px;
 		padding: 0;
 
 		.tabs {
@@ -860,7 +848,7 @@ $mobile-padding: 23px;
 	}
 
 	.meet-up {
-		margin: 2rem 0 8rem;
+		margin: 2rem 0 4.5rem;
 		padding: 0 $mobile-padding;
 
 		h2 {
@@ -1471,7 +1459,7 @@ $mobile-padding: 23px;
 	}
 
 	.plan .em-plan h1 {
-		padding: 100px 0 142px;
+
 		line-height: 1.1;
 		max-width: 100%;
 	}
@@ -1928,13 +1916,13 @@ $mobile-padding: 23px;
 
 		li {
 			margin: 0;
+			width: 33%;
 			display: block;
 			float: left;
-
+			
 			a {
 				border-color: #CBCBCB;
 				font-size: 1rem;
-				width: 6.75rem;
 				padding: 0.4rem 0 0.3rem;
 				margin-right: -1px;
 			}

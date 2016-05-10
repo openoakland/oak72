@@ -10,14 +10,13 @@
   -#   %p
   -#     = t(:watch_personal_stories)
 
-
-  .opening{:style => "background-image: url(#{"assets/static/stories-main.jpg"})"}
-    %h1
-      = t(:stories_title)
-    %div
+  .myrow
+    .opening.explain-text
       %p
         = t(:stories_description)
-
+    .opening.hero
+      %h1
+        = t(:stories_title)
   .intro
     .personal-look
       %h2
