@@ -73,9 +73,9 @@ en:
   use_airbnb_now: "Create an AirBnB proﬁle so you are ready to ﬁnd or share a place to stay if anything happens."
   use_airbnb_emergency: "Find a place to stay, or share your place with those in need."
   #Text Updates
-  use_txt_updates: "Get Updates from Code Red"
-  use_airbnb_now: "Register to have alerts sent proﬁle so you are ready to ﬁnd or share a place to stay if anything happens."
-  use_airbnb_emergency: "Find a place to stay, or share your place with those in need."
+  use_txt_updates: "Sign up for updates from CodeRED"
+  why_txt_updates: "Connect your phone to Alachua County CodeRED."
+  txt_updates_emergency: "Get official alerts as soon as they are sent out."
 
   #Neighborhood Networks Section
   use_local_networks: "Connect through your local networks."
