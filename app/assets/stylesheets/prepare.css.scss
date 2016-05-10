@@ -261,9 +261,7 @@ a.checklist:before {
 	@include retina-image(/assets/static/supplies_header, 750px 417px, jpg);
 
 	h1 {
-	margin-top: 2.2rem;
 	text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
-	padding: 190px 90px 4px 29px;
 	}
 
 	div {
@@ -285,23 +283,23 @@ a.checklist:before {
 }
 
 .action-bar .tabs {
-	@include span-columns(8.8);
+	@include span-columns(12);
 
 	li {
 		@include omega(3n);
 		text-align: center;
 		display: inline-block;
-		margin: 1.4rem 0.9rem 0.6rem 0;
+		float: left;
+		width: 33.33%;
 		font-family: $font-medium;
 		font-size: 1.6rem;
 		position: relative;
-
+		text-align: center;
 		a {
 			color: $body-light;
 			display: block;
 			padding: 0.6rem 0.2rem;
 			border: 1px solid #C2C2C2;
-			width: 12.6rem;
 		}
 	}
 

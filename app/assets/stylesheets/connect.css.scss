@@ -2,15 +2,16 @@
 
 
 .connect .opening {
+  &.hero {
 	@include retina-image(/assets/static/connect-main, 750px 417px, jpg);
-
+  }
 	h1 {
 		margin-top: 2.2rem;
 		text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
 		padding: 190px 185px 4px 29px;
 	}
 
-	div {
+	.explain-text {
 
 		p {
 			margin-top: 4.2rem;

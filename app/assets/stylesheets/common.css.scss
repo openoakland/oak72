@@ -1,0 +1,73 @@
+.myrow {
+  @include row();
+}
+
+.opening {
+  &.hero {
+    float: left;
+    position: relative;
+    height: 417px;
+  }
+  &.explain-text {
+    float: left;
+    color: #FFF;
+    background-color: $highlight;
+    padding: 0 20px 0 30px;
+    margin-right: -1px;
+
+    p {
+      font-size: 1.1875rem;
+      line-height: 1.6875rem;
+      margin-top: 1.9rem;
+    }
+  }
+  
+  @media(min-width: $mobile-breakpoint-width) {
+    &.hero {
+      width: $right-column-width;
+    }
+  }    
+  @media(max-width: $mobile-breakpoint-width) {
+    &.hero {
+      width: 100%;
+    }
+  }    
+  @media(min-width: $mobile-breakpoint-width) {
+    &.explain-text {
+      width: $left-column-width;
+      height: 417px;
+    }
+  }    
+  @media(max-width: $mobile-breakpoint-width) {
+    &.explain-text {
+      width: 100%;
+      padding: 10px;
+      min-height: 30px;
+    }
+  }    
+	@include row(block,RTL);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+		background-size: cover;
+	position: relative;
+
+	h1 {
+		@include span-columns(8.62938893);
+		font-family: $font-bold;
+		font-size: 3.56rem;
+		line-height: 4.5625rem;
+		color: #FFF;
+		text-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+		margin-top: 0;
+		margin-bottom: 0;
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+		width: 90%;
+	}
+
+
+	.explain-text {
+		@include span-columns(3.38061107);
+	}
+}
