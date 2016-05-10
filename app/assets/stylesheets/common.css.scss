@@ -3,10 +3,35 @@
 }
 
 .opening {
+  h1 {
+    
+    @include span-columns(8.62938893);
+    font-family: $font-bold;
+    font-size: $h1-default-size;
+    line-height: 4.5625rem;
+    color: #FFF;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 90%;
+    @media(max-width: $mobile-breakpoint-width) {
+      font-size: $h1-mobile-size;
+    }
+  }
+
+
   &.hero {
     float: left;
     position: relative;
-    height: 417px;
+    @media(min-width: $mobile-breakpoint-width) {
+      height: 417px;
+    }
+    @media(max-width: $mobile-breakpoint-width) {
+      height: $background-herobox-height;
+    }
   }
   &.explain-text {
     float: left;
@@ -50,22 +75,6 @@
 	background-repeat: no-repeat;
 		background-size: cover;
 	position: relative;
-
-	h1 {
-		@include span-columns(8.62938893);
-		font-family: $font-bold;
-		font-size: 3.56rem;
-		line-height: 4.5625rem;
-		color: #FFF;
-		text-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
-		margin-top: 0;
-		margin-bottom: 0;
-		position: absolute;
-		bottom: 30px;
-		left: 30px;
-		width: 90%;
-	}
-
 
 	.explain-text {
 		@include span-columns(3.38061107);

@@ -11,19 +11,18 @@
   -#     = t(:watch_personal_stories)
 
   .myrow
-    .intro
-      .personal-look
-        %h2
-          = t(:a_personal_look)
-        %p
-          = t(:watch_personal_stories)
-    .opening{:style => "background-image: url(#{"assets/static/stories-main.jpg"})"}
+    .opening.explain-text
+      %p
+        = t(:stories_description)
+    .opening.hero
       %h1
         = t(:stories_title)
-      %div
-        %p
-          = t(:stories_description)
-
+  .intro
+    .personal-look
+      %h2
+        = t(:a_personal_look)
+      %p
+        = t(:watch_personal_stories)
 
   -# %ul.story-list
   -#   - @stories.each do |story|
