@@ -4,10 +4,8 @@
 # this is the ENGLISH version
 
 en:
-  hello: "Hello"
 
-  #city72 site name
-  name72: "*GNV*"
+  #These are the strings (lines of text) that appear throughout the site.
 
   #===========================#
   #Navigation: Header
@@ -219,7 +217,7 @@ en:
   #About Us Page
   #===========================#
   for_us_by_us: "*GNV* is for us, by us."
-  our_mission : "Our mission is to enable the people of Gainesville to get prepared. *GNV* was created by OpenGainesville & the City of Gainesville, with the belief that the best way to do this is to get connected to each other, share resources, and start re-imagining the way we think about emergencies."
+  our_mission : "Our mission is to enable the people of Gainesville to get prepared. *GNV* was created by the City of Gainesville, with the belief that the best way to do this is to get connected to each other, share resources, and start re-imagining the way we think about emergencies."
   who : "Who"
   who_p1 : "For Gainesville, by Gainesville."
   who_p2 : "Gainesville is like no other place – and this platform is tailored to the particular quirks, context and people that make up our city."
