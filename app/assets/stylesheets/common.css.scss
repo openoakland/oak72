@@ -4,7 +4,7 @@
 
 .opening {
   h1 {
-    
+
     @include span-columns(8.62938893);
     font-family: $font-bold;
     font-size: $h1-default-size;
@@ -19,6 +19,11 @@
     width: 90%;
     @media(max-width: $mobile-breakpoint-width) {
       font-size: $h1-mobile-size;
+
+    }
+
+    @media(max-width: $mobile-breakpoint-width) {
+      line-height: 3rem;
     }
   }
 
@@ -46,30 +51,30 @@
       margin-top: 1.9rem;
     }
   }
-  
+
   @media(min-width: $mobile-breakpoint-width) {
     &.hero {
       width: $right-column-width;
     }
-  }    
+  }
   @media(max-width: $mobile-breakpoint-width) {
     &.hero {
       width: 100%;
     }
-  }    
+  }
   @media(min-width: $mobile-breakpoint-width) {
     &.explain-text {
       width: $left-column-width;
       height: 417px;
     }
-  }    
+  }
   @media(max-width: $mobile-breakpoint-width) {
     &.explain-text {
       width: 100%;
       padding: 10px;
       min-height: 30px;
     }
-  }    
+  }
 	@include row(block,RTL);
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
