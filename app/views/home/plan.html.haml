@@ -2,7 +2,7 @@
 = javascript_include_tag "home"
 .main-container.plan
   = render :partial => "partials/header"
-  
+
   .myrow
     .opening.explain-text
       %div
@@ -11,7 +11,7 @@
     .opening.hero.em-plan{:style => "background-image: url(#{"assets/static/plan-main.jpg"})"}
       %h1
         = t(:make_a_plan_with_your_people)
-        
+
   .meet-up
     %h2
       = t(:set_up)
@@ -38,7 +38,7 @@
     %h2
       = t(:learn_tips)
     %p
-      = t(:read_and_print)
+      = t(:read_and_print_html, link:"https://www.ready.gov/hurricanes")
     .slider-header
       %ul.basics-tabs
         - unless @before_tips.empty?
@@ -75,4 +75,5 @@
                 = tip.title.html_safe
               %p
                 = tip.description.html_safe
+
   = render :partial => "partials/footer"
