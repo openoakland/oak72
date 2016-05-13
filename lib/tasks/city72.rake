@@ -510,10 +510,6 @@ namespace :city72 do
           moment_type: :after,
           title: 'Steer clear of power lines.',
           description: 'Do not touch downed power lines or objects in contact with downed lines. Report electrical hazards to the police and the utilities.',
-        }, {
-          moment_type: :after,
-          title: 'Test',
-          description: 'testing',
         }
       ]
     )
