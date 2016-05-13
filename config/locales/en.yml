@@ -7,6 +7,8 @@ en:
 
   #These are the strings (lines of text) that appear throughout the site.
 
+  site_title: "safeGNV"
+
   #===========================#
   #Navigation: Header
   #===========================#
@@ -22,10 +24,10 @@ en:
   #===========================#
   #Home Landing Page Strings
   #===========================#
-  hero_image_text: "safeGNV is Gainesville's hub for emergency preparedness."
+  hero_image_text: "SafeGNV is Gainesville’s hub for information related to events and emergencies"
   what_is: "What is safeGNV?"
   what_text: "safeGNV is your hub for emergency preparedness. You’ll find information about what to do in an emergency, simple steps to get connected, and useful guides to help you get prepared. Share safeGNV with a friend—and help your loved ones and your community get prepared."
-  why_72: "Why get safeGNV?"
+  why_72: "Why safeGNV?"
   why_text: "In a serious emergency, services will be impacted, so a basic rule of thumb is for people to be able to take care of each other for 72 hours before help arrives. That’s just three days—think of it as a long weekend—or nine meals."
   motto: "We believe in connection, not catastrophe."
   motto_explained: "Actual emergencies look more like people coming together than cities falling apart. safeGNV is about prompting members of the community to get connected before an emergency—so we can be that much better off when something happens."
@@ -204,7 +206,7 @@ en:
   agree_on_a_place: "Agree on a place to meet."
   how_about_a: "How about a park? A landmark? Don’t choose a house—in case it’s inaccessible."
   learn_tips: "Learn tips."
-  read_and_print: "Read and print our Hurricane Guide to learn a few easy steps to stay safe."
+  read_and_print_html: "Read and print our Hurricane Guide to learn a few easy steps to stay safe. For in-depth information checkout <a href='%{link}' target='_blank'>ready.gov</a>."
   #note: the above string needs to integrate a link to the Hurricane Guide
 
   #===========================#
