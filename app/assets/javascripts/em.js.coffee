@@ -1,8 +1,8 @@
 $( ->
     reports = [
-        { href: '#tab-citizen-updates', contentSelector: '.citizen-reports', anchorSelector: '[href="#tab-citizen-updates"]' }
-        { href: '#tab-official-reports', contentSelector: '.official-reports', anchorSelector: '[href="#tab-official-reports"]' }
-        { href: '#tab-service-status', contentSelector: '.status', anchorSelector: '[href="#tab-service-status"]' }
+        { href: '#tab-one', contentSelector: '.citizen-reports', anchorSelector: '[href="#tab-one"]' }
+        { href: '#tab-two', contentSelector: '.official-reports', anchorSelector: '[href="#tab-two"]' }
+        { href: '#tab-three', contentSelector: '.status', anchorSelector: '[href="#tab-three"]' }
     ]
 
     $('a.show-quick-guide').click ->
