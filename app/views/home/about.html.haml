@@ -1,56 +1,59 @@
 = provide(:title, 'About Us')
 .main-container.about
-	= render :partial => "partials/header"
+  = render :partial => "partials/header"
 
-	.opening.about-intro
-		%h1
-			= t(:for_us_by_us)
-		%div
-			%p
-				= t(:our_mission)
-	%ul.about-data
-		%li
-			.about-who
-			%h2
-				= t(:who)
-			%p
-				= t(:who_p1)
-			%p
-				= t(:who_p2)
-		%li
-			.about-what
-			%h2
-				= t(:what)
-			%p
-				= t(:what_p1)
-			%p
-				= t(:what_p2)
-		%li
-			.about-why
-			%h2
-				= t(:why)
-			%p
-				= t(:why_p1)
-			%p
-				= t(:why_p2)
+  .myrow
+    .opening.explain-text
+      %div
+        %p
+          = t(:our_mission)
+    .opening.hero.about-intro
+      %h1
+        = t(:for_us_by_us)
+  .about-data
+    %li
+      .about-who
+        %h2
+          = t(:who)
+        %p
+          = t(:who_p1)
+        %p
+          = t(:who_p2)
+          
+    %li
+      .about-what
+        %h2
+          = t(:what)
+        %p
+          = t(:what_p1)
+        %p
+          = t(:what_p2)
+          
+    %li
+      .about-why
+        %h2
+          = t(:why)
+        %p
+          = t(:why_p1)
+        %p
+          = t(:why_p2)
+          
+  .image-credits
+    %div
+      %h2
+        = t(:image_credits)
+    %ul
+      %li
+        %p
+          = t(:photographer_1_html, link:"https://www.flickr.com/photos/64788029@N03/16160905106", target: "_blank")
+      %li
+        %p
+          = t(:photographer_2_html, link:"https://www.flickr.com/photos/29800336@N03/9673165616", target: "_blank")
+      %li
+        %p
+          = t(:photographer_3_html, link:"https://www.flickr.com/photos/gainesville/5123069655", target: "_blank")
+      %li
+        %p
+          = t(:photographer_4_html, link:"https://www.flickr.com/photos/50356965@N00/3227879013", target: "_blank")
 
-	.image-credits
-		%div
-			%h2
-				= t(:image_credits)
-			%ul
-				%li
-					%p
-						= t(:photographer_1_html, link:"https://www.flickr.com/photos/64788029@N03/16160905106", target: "_blank")
-				%li
-					%p
-						= t(:photographer_2_html, link:"https://www.flickr.com/photos/29800336@N03/9673165616", target: "_blank")
-				%li
-					%p
-						= t(:photographer_3_html, link:"https://www.flickr.com/photos/gainesville/5123069655", target: "_blank")
-				%li
-					%p
-						= t(:photographer_4_html, link:"https://www.flickr.com/photos/50356965@N00/3227879013", target: "_blank")
-
-
-	= render :partial => "partials/footer"
+  = render :partial => "partials/footer"
