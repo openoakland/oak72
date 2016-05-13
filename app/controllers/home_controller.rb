@@ -15,7 +15,6 @@ class HomeController < ApplicationController
   end
 
   def about
-    # @render_captcha = MailHelper::posible_attack?
   end
 
   def connect
