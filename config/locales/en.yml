@@ -65,8 +65,13 @@ en:
   face_emergency: "Post your status to Facebook to let friends and family know you are ok."
   #Twitter
   use_twitter: "Check updates on Twitter"
-  use_twitter_now: "Add emergency accounts to your Twitter feed, to stay informed. Some of our favorites"
-  use_twitter_emergency: 'Post about yourself and your area. Use #safeGNV to connect related tweets.'
+  twitter_fav_1: "@FLSERT"
+  twitter_fav_2: "@Alachua_Co_EM"
+  twitter_fav_3: "c"
+  twitter_fav_4: "d"
+  use_twitter_now_html: "Add emergency accounts to your Twitter feed, to stay informed. Some of our favorites:</br> %{twitter_fav_1}, %{twitter_fav_2}, %{twitter_fav_3}, and %{twitter_fav_4}."
+  twitter_tag: "#safeGNV"
+  use_twitter_emergency_html: "Post about yourself and your area. Use %{twitter_tag} to connect related tweets."
   city72_tweet_tag: "safeGNV"
   #Cloud Service
   use_cloud: "Save documents to a cloud service"
@@ -215,7 +220,7 @@ en:
   agree_on_a_place: "Agree on a place to meet."
   how_about_a: "How about a park? A landmark? Don’t choose a house—in case it’s inaccessible."
   learn_tips: "Learn tips."
-  read_and_print_html: "Read and print our Hurricane Guide to learn a few easy steps to stay safe. For in-depth information checkout <a href='%{link}' target='_blank'>ready.gov</a>."
+  read_and_print_html: "Read and print our Hurricane Guide to learn a few easy steps to stay safe. For in-depth information checkout <a href='%{link}' target='_blank'>ready.gov</a> and <a href='%{link}' target='_blank'>example.com</a>."
 
   #plan-widget Strings
   before_emergency: "Before a Hurricane"
@@ -315,3 +320,4 @@ en:
   city72_toolkit: "City72 Toolkit"
   resources_and_partners: "Resources and Partners"
   spread_the_word: "Spread the word"
+

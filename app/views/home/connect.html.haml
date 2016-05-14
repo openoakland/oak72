@@ -47,11 +47,11 @@
           %strong
             =t(:now)
             <br/>
-          =t(:use_twitter_now)
+          =t(:use_twitter_now_html, twitter_fav_1: link_to(t('twitter_fav_1'), 'https://twitter.com/FLSERT', target: :blank),twitter_fav_2: link_to(t('twitter_fav_2'), 'https://twitter.com/Alachua_Co_EM', target: :blank), twitter_fav_3: link_to(t('twitter_fav_3'), 'http://example.com', target: :blank), twitter_fav_4: link_to(t('twitter_fav_4'), 'http://example.com', target: :blank))
         %p
           %strong
             =t(:in_an_emergency_heading)
-          =t(:use_twitter_emergency)
+          =t(:use_twitter_emergency_html, twitter_tag: link_to(t('twitter_tag'), 'https://twitter.com/search?f=tweets&q=%23safeGNV&src=typd', target: :blank))
 
       %li.drive
         %h3
@@ -163,7 +163,6 @@
           %strong
             =t(:partner3)
           =t(:partner3_description)
-
 
 
   = render :partial => "partials/footer"
