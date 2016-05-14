@@ -220,7 +220,7 @@ en:
   agree_on_a_place: "Agree on a place to meet."
   how_about_a: "How about a park? A landmark? Don’t choose a house—in case it’s inaccessible."
   learn_tips: "Learn tips."
-  read_and_print_html: "Read and print our Hurricane Guide to learn a few easy steps to stay safe. For in-depth information checkout <a href='%{link}' target='_blank'>ready.gov</a> and <a href='%{link}' target='_blank'>example.com</a>."
+  read_and_print_html: "Read and print our Hurricane Guide to learn a few easy steps to stay safe. For in-depth information checkout <a href='%{link}' target='_blank'>ready.gov</a>."
 
   #plan-widget Strings
   before_emergency: "Before a Hurricane"
