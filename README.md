@@ -11,13 +11,13 @@ The main differences between the safeGNV codebase and City72 codebase are:
 
 • safeGNV is abstracted so that all the text strings come from a locale file.
 
-• safeGNV is less reliant on a content management system (CMS). Many sections of the CMS assumed that the site would exist in English only.
+• safeGNV is less reliant on a content management system (CMS). Instead, you can customize the site by editing image files and strings in a yml file. This change affords translation of the safeGNV version, if desired.
 
 • City72 currently assumes that the site you are creating is for a city. Since all of the text is editable, safeGNV could more readily be adapted for a county, organization or other community.
 
-• safeGNV requires more technical know-how but offers more flexibility in terms of what can be customized. 
+• safeGNV requires more technical know-how but offers more flexibility. 
 
-• Cloudinary is not used. Pro: this saves you about $50/month. Con: You can't change the photos via the CMS.
+• The Cloudinary add-on is not used. Pro: this saves you about $50/month. Con: You can't change the photos via the CMS. Instead, you can edit the images by replacing files in the assets/images directory.
 
 
 ---
