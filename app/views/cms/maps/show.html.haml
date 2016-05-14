@@ -6,9 +6,9 @@
 
     .screen-intro
       %p.screen-info Embed a Google Crisis Map centered on your city and connect multiple Twitter feeds.
-      .action-area
-        = content_tag :button, :type => :submit, :class => 'btn btn-primary js-save ladda-button' do
-          %span.ladda-label Save Changes
+      -# .action-area
+      -#   = content_tag :button, :type => :submit, :class => 'btn btn-primary js-save ladda-button' do
+      -#     %span.ladda-label Save Changes
 
     .row
       = f.input :map_url, as: :text, input_html: {cols: '55', rows: 6}, required: false, label: 'Crisis Map Link <span class="help">(starts with "http://")</span>'.html_safe, wrapper_html: {class: 'map-link-container'}
