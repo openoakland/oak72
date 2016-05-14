@@ -1,6 +1,6 @@
 Included in this guide:
-  * [About safeGNV](#about_safegnv)
-  * [Deploy on Heroku](#deploy_on_heroku)
+  * [About safeGNV](#about-safegnv)
+  * [Deploy on Heroku](#deploy-on-heroku)
   * [Development Environment Setup](#development-environment-setup)
 
 # About safeGNV
