@@ -7,7 +7,12 @@ en:
 
   #These are the strings (lines of text) that appear throughout the site.
 
+  #===========================#
+  #Title
+  #===========================#
   site_title: "safeGNV"
+  #This shows up in the browser tab and bookmarks.
+
 
   #===========================#
   #Navigation: Header
@@ -20,6 +25,7 @@ en:
   live_updates: "Live updates + crisis tools in an emergency."
   situation_map: "Map"
   updates: "Updates"
+
 
   #===========================#
   #Home Landing Page Strings
@@ -101,6 +107,7 @@ en:
   partner3: "Alameda County CERT"
   partner3_description: "teaches residents how to care for themselves, their families, and their neighbors in an emergency."
 
+
   #===========================#
   #Gather Supplies Page
   #===========================#
@@ -114,6 +121,7 @@ en:
   personal_why: "In addition to the standard supplies, certain things will help you—and only you—manage during an emergency. Set aside a few items that will give you and your family extra comfort."
   sharing_is: "Sharing is caring."
   sharing_why: "Emergencies are opportunities to come together and support those around you. What items would you’d like to share? Sharing drinks, singing songs, or having a meal are even more meaningful in the days after an emergency than before."
+
 
   #===========================#
   #Supply Items
@@ -167,6 +175,7 @@ en:
   drinks: "Drinks"
   board_games: "Board games"
 
+
   #===========================#
   #View Stories Page
   #===========================#
@@ -207,17 +216,39 @@ en:
   how_about_a: "How about a park? A landmark? Don’t choose a house—in case it’s inaccessible."
   learn_tips: "Learn tips."
   read_and_print_html: "Read and print our Hurricane Guide to learn a few easy steps to stay safe. For in-depth information checkout <a href='%{link}' target='_blank'>ready.gov</a>."
-  #note: the above string needs to integrate a link to the Hurricane Guide
 
-  #===========================#
-  #Make a Plan : Emergency
-  #===========================#
-  guide_title: "Hurricane Guide"
-  print_full_guide: "Print Full Guide"
-  before_event: "Before a Hurricane"
-  during_event: "During a Hurricane"
-  after_event: "After a Hurricane"
-  print_guide: "Print Full Guide"
+  #plan-widget Strings
+  before_emergency: "Before a Hurricane"
+  during_emergency: "During a Hurricane"
+  after_emergency: "After a Hurricane"
+  print_guide: "Print Guide"
+  before_1_title: "Know the Plan"
+  before_1_description_html: "Gather and <a href='%{link}' target='_blank'>organize supplies</a> (essentials, useful, and personal items to help you weather the storm) and make a family communications plan for what to do in a hurricane."
+  #link: http://www.safegnv.org/supplies
+  before_2_before: "Learn your evacuation route."
+  before_2_description: "Learn evacuation routes and how to find higher ground. Determine where you would go and how you would get there if you needed to evacuate."
+  before_3_before: "Secure your home."
+  before_3_description: "Secure your home, close storm shutters, and secure outdoor objects or bring them indoors."
+  during_1_before: "Listen for Updates"
+  during_1_description_html: "Listen to a <a href='%{link}' target='_blank'>NOAA Weather Radio</a> or local news for critical information from the National Weather Service. Be alert to changing weather conditions and follow official instructions."
+  #link: http://www.nws.noaa.gov/nwr/
+  during_2_before: "Turn off Utilities"
+  during_2_description_html: " <a href='%{link}' target='_blank'>Turn off utilities</a> and propane tanks if instructed to do so. Otherwise, turn the refrigerator to its coldest setting and keep its doors closed (here's how to  <a href='%{link}' target='_blank'>keep food safe</a> during and after an emergency)."
+  #link1: https://www.ready.gov/utility-shut-safety
+  #link2: https://www.ready.gov/food
+  during_3_before: "Save a Supply of Water."
+  during_3_description_html: "Ensure a  <a href='%{link}' target='_blank'>supply of water</a> for sanitary purposes such as cleaning and flushing toilets. Fill the bathtub and large containers with water."
+  #during_3_link: https://www.ready.gov/managing-water
+  after_1_before: "Find your family."
+  after_1_description_html: "If you are separated from your family, use your  <a href='%{link}' target='_blank'>family communications plan</a>, contact the American Red Cross (ARC) at 1-800-RED-CROSS/1-800-733-2767 or visit the ARC Safe and Well site:  <a href='%{link}' target='_blank'>www.safeandwell.org</a>."
+  #LINK1: http://www.safegnv.org/plan#
+  #link2: https://safeandwell.communityos.org/cms/index.php
+  after_2_before: "Inspect your home for damage."
+  after_2_description: "Take pictures of damage (both of the building and its contents) for insurance purposes. If safety is a concern, have your residence inspected by a building inspector or structural engineer before entering."
+  after_3_before: "Practice Fire Safety."
+  after_3_description: "Use battery-powered flashlights in the dark. DO NOT use candles, in order to prevent fires."
+  spread_the_word_theres_safety_in_numbers: "Spread the word! There’s safety in numbers."
+
 
   #===========================#
   #About Us Page
@@ -238,9 +269,7 @@ en:
   photographer_2_html : "\"<a href='%{link}' target='_blank'>Viva 500 Geocaching</a>\" by Dana Moser"
   photographer_3_html : "\"<a href='%{link}' target='_blank'>Doug and Gus</a>\" by Farol Tomson"
   photographer_4_html : "\"<a href='%{link}' target='_blank'>Paynes Prairie Watching</a>\" by Marcy Hairston"
-  # : ""
-  # : ""
-  # : ""
+
 
   #===========================#
   #Map & Updates Page(s)
@@ -258,7 +287,7 @@ en:
   transportation: "Transportation"
   #Map Guide Joyride-Tour-Steps
   what_happened : "What happened?"
-  announces_the_crisis: "Announces the crisis and its severity."
+  announces_the_crisis: "Announces the event or emergency and its severity."
   one_of_five: "1 of 5"
   street_status: "Street Status"
   a_geo_tageed: "A geo-tagged crisis map that shows nearby shelters and resources, as well as hazardous or road-blocked areas -- so you can find safety in your surroundings"
@@ -279,7 +308,6 @@ en:
   #===========================#
   #Footer Text
   #===========================#
-
   footer_text: "Brought to you by the City of Gainesville, in partnership with the people of Gainesville."
   find_out_more: "Find out more"
   about_us: "About Us"
