@@ -9,25 +9,25 @@
         %strong.status OFF
         %button.btn.btn-em{data: {toggle:"modal", target:".switch-em"}} Switch ON
   %a#logo{href:"/cms"}
-    - if @about.logo.url
-      %img{src: "#{@about.logo.url}", alt: "#{@city.abbreviation}72 (logo)"}
-    - else
-      %span.text-logo #{@city.abbreviation}72
+    %img{src: "assets/city72logo.svg", alt: "#{@city.abbreviation}72 (logo)"}
+
 
 %nav.navbar
   %ul.nav.navbar-nav
     %li{:class => ('active' if current_page?(cms_city_path))}
-      = link_to "City Info", cms_city_path
-    %li{:class => ('active' if current_page?(cms_city_connections_path))}
-      = link_to "Connections", cms_city_connections_path
-    %li{:class => ('active' if current_page?(cms_supplies_path))}
-      = link_to "Supplies", cms_supplies_path
-    %li{:class => ('active' if current_page?(cms_stories_path))}
-      = link_to "Stories", cms_stories_path
+      = link_to "Basic Info", cms_city_path
+    -# %li{:class => ('active' if current_page?(cms_city_connections_path))}
+    -#   = link_to "Connections", cms_city_connections_path
+    -# %li{:class => ('active' if current_page?(cms_supplies_path))}
+    -#   = link_to "Supplies", cms_supplies_path
+    -# %li{:class => ('active' if current_page?(cms_stories_path))}
+    -#   = link_to "Stories", cms_stories_path
     %li{:class => ('active' if current_page?(cms_plan_path))}
       = link_to "Plan", cms_plan_path
-    %li{:class => ('active' if current_page?(cms_about_path))}
-      = link_to "About", cms_about_path
+    -# %li{:class => ('active' if current_page?(cms_about_path))}
+    -#   = link_to "About", cms_about_path
+    %li
+      = link_to "Map & Updates", cms_map_path
     %li.user
       %a.dropdown-toggle{data: {toggle:"dropdown"}}
         Admin
@@ -41,8 +41,7 @@
           = link_to "Add/Change Analytics", cms_analytic_path
         %li
           = link_to "Log Out", destroy_admin_user_session_path, method: :delete
-    %li.em-menu
-      = link_to "Map & Updates", cms_map_path
+
 
 .modal.switch-em.fade
   .modal-dialog.modal-lg

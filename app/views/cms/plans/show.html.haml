@@ -2,19 +2,19 @@
 = javascript_include_tag "cms/custom_quick_guide_modal"
 .main-content.plan
   .screen-intro
-    %p.screen-info Select a pre-populated Quick Guide—featuring Before, During, and After tips—so residents know how to get prepared for the types of emergencies that might be relevant for your city. Or, write your own.
-    .action-area
-      %a.btn.btn-primary.ladda-button.js-save{:href => "#"} Save Changes
+    %p.screen-info Set the plan option.
+    -# .action-area
+    -#   %a.btn.btn-primary.ladda-button.js-save{:href => "#"} Save Changes
 
   = form_for @city.plan, url: cms_plan_path, method: :put, html: { class: "js-form"} do |f|
-    .form-group
-      %label{:for => "community-image"} Community Image
-      %p.help-block Choose an evocative image of people gathering in your city.
-      - if !@city.plan.community_image.blank?
-        %img.preview{src: @city.plan.community_image}
-      - else
-        %img.preview{src: '/assets/placeholder-plan.jpg'}
-      = f.file_field(:community_image, :class => "form-control", :label => "Community Image")
+    -# .form-group
+    -#   %label{:for => "community-image"} Community Image
+    -#   %p.help-block Choose an evocative image of people gathering in your city.
+    -#   - if !@city.plan.community_image.blank?
+    -#     %img.preview{src: @city.plan.community_image}
+    -#   - else
+    -#     %img.preview{src: '/assets/placeholder-plan.jpg'}
+    -#   = f.file_field(:community_image, :class => "form-control", :label => "Community Image")
     .form-group
       %label{:for => "select-plan"} What type of emergency is your area most at risk for?
       - QuickGuide.order("id DESC").each do |q|
