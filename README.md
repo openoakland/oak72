@@ -1,6 +1,6 @@
 Included in this guide:
-  * [About OAK72](#about_oak72)
-  * [Production Deployment](#production_deployment)
+  * [About safeGNV](#about_safegnv)
+  * [Deploy on Heroku](#deploy_on_heroku)
   * [Development Environment Setup](#development-environment-setup)
 
 # About safeGNV
