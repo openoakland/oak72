@@ -3,21 +3,21 @@ Included in this guide:
   * [Deploy on Heroku](#deploy-on-heroku)
   * [Development Environment Setup](#development-environment-setup)
 
-# About safeGNV
+# About SafeGNV
 
-**safeGNV was derived from City72**. For more information about the toolkit, visit [toolkit.sf72.org](http://toolkit.sf72.org). 
+**SafeGNV was derived from City72**. Visit SafeGNV at [safegnv.org](http://safegnv.org). For more information about the toolkit, visit [toolkit.sf72.org](http://toolkit.sf72.org). 
 
-The main differences between the safeGNV codebase and City72 codebase are:
+**Differences:**
 
-• safeGNV is abstracted so that all the text strings come from a locale file.
+• SafeGNV is set up so that all the text strings come from a locale file.
 
-• safeGNV is less reliant on a content management system (CMS). Instead, you can customize the site by editing image files and strings in a yml file. This change affords translation of the safeGNV version, if desired.
+• SafeGNV is less reliant on a content management system (CMS). Instead, you would customize the site by editing image files and the locale file. This difference affords translation of the SafeGNV version, if desired.
 
-• City72 currently assumes that the site you are creating is for a city. Since all of the text is editable, safeGNV could more readily be adapted for a county, organization or other community.
+• The Cloudinary add-on is not used on safeGNV. 
 
-• safeGNV requires more technical know-how but offers more flexibility. 
+• City72 currently assumes that the site you are creating is for a city. Since all of the text on SafeGNV is editable, SafeGNV could more readily be adapted for a county or other community.
 
-• The Cloudinary add-on is not used. Pro: this saves you about $50/month. Con: You can't change the photos via the CMS. Instead, you can edit the images by replacing files in the assets/images directory.
+• SafeGNV requires a little more technical know-how but offers much more flexibility in terms customization and localization. 
 
 
 ---
