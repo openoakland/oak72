@@ -73,6 +73,7 @@
 			height: 35px;
 			font-family: $font-bold;
 		}
+
 	}
 }
 
@@ -101,7 +102,7 @@
 		color: $dark-grey;
 		font-family: $font-bold;
 		line-height: 1.65rem;
-		max-width: 89%;
+
 	}
 
 	p {
@@ -144,7 +145,7 @@
 	@include retina-image(/assets/static/connect-secondary, 1020px 401px, jpg);
 	background-repeat: no-repeat;
 	padding: 0 30px;
-	text-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+	text-shadow: 0 0 20px rgba(0, 0, 0, 1);
 
 	ul {
 		@include row();
@@ -204,6 +205,10 @@
 			}
 		}
 	}
+	@media(max-width: $mobile-breakpoint-width) {
+		@include retina-image(/assets/static/connect-secondary, cover, jpg);
+}
+
 }
 
 .learn-more {
@@ -216,6 +221,7 @@
 		margin: 6.5rem 0 0;
 		color: $dark-grey;
 		font-family: $font-bold;
+		padding-top: 1rem;
 	}
 
 	> p {

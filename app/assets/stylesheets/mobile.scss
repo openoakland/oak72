@@ -1,6 +1,6 @@
 $mobile-gray-title: #808080;
 $mobile-dark-text: #515050;
-$mobile-padding: 23px;
+$mobile-padding: 20px;
 
 @mixin intro-paragraph-mobile {
 	font-size: 1rem;
@@ -486,6 +486,7 @@ $mobile-padding: 23px;
 	.learn-more {
 		ul li {
 			@include span-columns(4);
+			padding: 24px 0 20px;
 		}
 	}
 
@@ -571,7 +572,10 @@ $mobile-padding: 23px;
 
 			&.facebook:before,
 			&.twitter:before,
-			&.drive:before {
+			&.drive:before,
+			&.nextdoor:before,
+			&.airbnb:before,
+			&.txt_updates:before, {
 				font-size: 2rem;
 				width: 57px;
 				height: 52px;
@@ -581,15 +585,18 @@ $mobile-padding: 23px;
 		}
 
 		h3 {
-			font-size: 16px;
+			font-size: 18px;
 			line-height: 1.2;
 			font-family: $font-bold;
 		}
 
 		.facebook h3,
 		.twitter h3,
-		.drive h3 {
-			padding-left: 72px;
+		.drive h3,
+		.nextdoor h3,
+		.airbnb h3,
+		.txt_updates h3 {
+			padding-top: 72px;
 		}
 
 		p {
@@ -654,7 +661,6 @@ $mobile-padding: 23px;
 	}
 
 	.learn-more {
-		padding: 0 $mobile-padding;
 
 		h3 {
 			margin-top: 0;
@@ -670,11 +676,11 @@ $mobile-padding: 23px;
 			margin: 0;
 
 			li {
-				padding: 0 0 20px;
+
 			}
 
 			p {
-				font-size: 0.75rem;
+				font-size: 1rem;
 				color: #7F7F7F;
 				line-height: 1.5;
 				margin-bottom: 0;
@@ -1039,7 +1045,7 @@ $mobile-padding: 23px;
 	.about-data {
 		padding: 0;
 		margin-top: 40px;
-		
+
 		li {
 			padding-bottom: 1.2rem;
 		}
@@ -1535,13 +1541,12 @@ $mobile-padding: 23px;
 			margin: 0;
 		}
 
-		.intro-networks {
-			margin: 0;
-			@include intro-paragraph-mobile;
-		}
+
 
 		.networks-list {
-			margin: 0.3rem auto 1rem;
+			margin-top: 40px;
+
+			// margin: 0.5rem auto 1rem;
 
 			li {
 				@include span-columns(4);
@@ -1555,6 +1560,13 @@ $mobile-padding: 23px;
 				font-size: 1rem;
 			}
 		}
+	}
+
+	.intro-networks {
+		// margin: 0;
+		// @include intro-paragraph-mobile;
+		margin-bottom: 40px;
+
 	}
 
 	.talk-to-friends {
@@ -2300,9 +2312,9 @@ $mobile-padding: 23px;
 		background-size: 140%;
 	}
 
-	.full-img-article {
-		@include retina-image(/assets/mobile/connect-secondary, 320px 514px, jpg);
-	}
+	// .full-img-article {
+	// 	@include retina-image(/assets/static/connect-secondary, 320px 514px, jpg);
+	// }
 
 	// .home .page-intro .big-title {
 	// 	@include retina-image(/assets/mobile/home-header, 320px 273px, jpg);

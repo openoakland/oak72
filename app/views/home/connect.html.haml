@@ -17,13 +17,13 @@
         = t(:networks)
       %p.intro-networks
         = t(:inevent)
-    .know
-      %h3
-        = t(:learnabout)
-      %p
-        = t(:learnaboutdetails)
-      %a{href:"about"}
-        = t(:aboutus)
+    -# .know
+    -#   %h3
+    -#     = t(:learnabout)
+    -#   %p
+    -#     = t(:learnaboutdetails)
+    -#   %a{href:"about"}
+    -#     = t(:aboutus)
   .networks-list
     %ul
       %li.facebook
@@ -151,18 +151,18 @@
           =t(:partner1_description)
           %a{ :href => "http://www.redcross.org/local/ca/san-francisco", :title => "www.redcross.org", :target => "_blank" }
             </br> www.redcross.org
-      %li
-        %img(src="/assets/static/partner-core.png")
-        %p
-          %strong
-            =t(:partner2)
-          =t(:partner2_description)
-      %li
-        %img(src="/assets/static/partner-cert.png")
-        %p
-          %strong
-            =t(:partner3)
-          =t(:partner3_description)
+      -# %li
+      -#   %img(src="/assets/static/partner-core.png")
+      -#   %p
+      -#     %strong
+      -#       =t(:partner2)
+      -#     =t(:partner2_description)
+      -# %li
+      -#   %img(src="/assets/static/partner-cert.png")
+      -#   %p
+      -#     %strong
+      -#       =t(:partner3)
+      -#     =t(:partner3_description)
 
 
   = render :partial => "partials/footer"
