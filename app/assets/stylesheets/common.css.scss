@@ -25,6 +25,14 @@
     @media(max-width: $mobile-breakpoint-width) {
       line-height: 3rem;
     }
+
+    /* page specific changes */
+    &.get-connected {
+    }
+    &.make-a-plan {
+    }
+    &.gather-supplies {
+    }
   }
 
 
