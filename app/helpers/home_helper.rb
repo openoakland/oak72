@@ -11,4 +11,11 @@ module HomeHelper
       ([tw_accounts.first(tw_accounts.size - 1).join(", "), tw_accounts.last(1)] - [""]).join(" and ")
     end
   end
+
+  def yaml_key_creator(section_name, section_index, suffix)
+    cand_1 = "#{section_name}_#{section_index}#{suffix}"
+    cand = (I18n.t(cand_1.to_sym, :default => '')).empty? ? "#{section_name}_#{section_index}#{suffix}_html" : cand_1
+
+    cand.to_sym
+  end
 end
