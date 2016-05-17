@@ -13,7 +13,7 @@ Included in this guide:
 
 • SafeGNV is less reliant on a content management system (CMS). Instead, you would customize the site by editing image files and the locale file. This difference affords translation of the SafeGNV version, if desired.
 
-• The Cloudinary add-on is not used on safeGNV. 
+• The Cloudinary add-on is not used on safeGNV. However, the add-on is still referenced in the code, in case you wish to enable the functionality. In other words, you do not need to pay for the premium add-on if you leave things as they are currently configured.
 
 • City72 currently assumes that the site you are creating is for a city. Since all of the text on SafeGNV is editable, SafeGNV could more readily be adapted for a county or other community.
 
