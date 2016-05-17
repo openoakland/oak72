@@ -10,7 +10,8 @@ namespace :city72 do
     CityNetwork.delete_all
     CityResource.delete_all
     EmergencyStory.delete_all
-
+    QuickGuide.delete_all
+    
     EmergencyStory.create! name: 'Lindsay', location: 'SOMA', image: File.open('app/assets/images/placeholder/story-2.jpg'), story: 'We won\'t always be able to reach our earthquake kit. We might need help or help others. we are going to need to trust each other deeply in the days following a major emergency. These relationships are the ones that are going to sustain us and save us. ', call_to_action_cd:0
     EmergencyStory.create! name: 'Carol', location: 'The Haight', image: File.open('app/assets/images/placeholder/story-3.jpg'), story: 'At Glide, we have a lot of emergency equipment - cots, blankets, food ready to offer. It\'s a community center where people can come together and know that they are going to be met with dignity and respect and a home, in the midst of crisis.', call_to_action_cd:1
     EmergencyStory.create! name: 'Justin', location: 'Ocean Beach', image: File.open('app/assets/images/placeholder/story-4.jpg'), story: 'We set up a list – a calling tree with our friends, and we have a meeting place. We have a general timeline – after an emergency, on the half hour, every half hour. It\'s a corner store near our houses.', call_to_action_cd:0
