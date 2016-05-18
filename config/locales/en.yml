@@ -22,7 +22,6 @@ en:
   view_stories: "View Stories"
   make_a_plan: "Make a Plan"
   map_and_updates: "Map & Updates"
-  live_updates: "Live updates + crisis tools in an emergency."
   situation_map: "Map"
   updates: "Updates"
 
@@ -31,12 +30,12 @@ en:
   #Home Landing Page Strings
   #===========================#
   hero_image_text: "SafeGNV is Gainesville’s hub for information related to events and emergencies"
-  what_is: "What is safeGNV?"
-  what_text: "safeGNV is your hub for emergency preparedness. You’ll find information about what to do in an emergency, simple steps to get connected, and useful guides to help you get prepared. Share safeGNV with a friend—and help your loved ones and your community get prepared."
-  why_72: "Why safeGNV?"
+  what_is: "What is SafeGNV?"
+  what_text: "SafeGNV is your hub for emergency preparedness. You’ll find information about what to do in an emergency, simple steps to get connected, and useful guides to help you get prepared. Share SafeGNV with a friend—and help your loved ones and your community get prepared."
+  why_72: "Why SafeGNV?"
   why_text: "In a serious emergency, services will be impacted, so a basic rule of thumb is for people to be able to take care of each other for 72 hours before help arrives. That’s just three days—think of it as a long weekend—or nine meals."
   motto: "We believe in connection, not catastrophe."
-  motto_explained: "Actual emergencies look more like people coming together than cities falling apart. safeGNV is about prompting members of the community to get connected before an emergency—so we can be that much better off when something happens."
+  motto_explained: "Actual emergencies look more like people coming together than cities falling apart. SafeGNV is about prompting members of the community to get connected before an emergency—so we can be that much better off when something happens."
   good_news: "Good news. You’re more prepared than you think."
   learn_more: "Learn more..."
   gc_explained: "Make the most of your existing networks of friends, family, neighbors, and colleagues—so you can get help, and help others."
@@ -53,8 +52,8 @@ en:
   connectmain: "When disaster strikes, we come together to help each other. Getting prepared is about knowing your neighbors, saying hi to the regulars at the local market, and staying in touch with family and friends—both digitally and in person."
   networks: "Connect through your digital networks."
   inevent: "In the event of an emergency, we all turn to our existing tools and networks—many of which are digital. Think about your connections and the online communities you’re already a part of, so you can share updates and information when something happens."
-  learnabout: "Learn about safeGNV."
-  learnaboutdetails: "Find out the story behind the creation of safeGNV."
+  learnabout: "Learn about SafeGNV."
+  learnaboutdetails: "Find out the story behind the creation of SafeGNV."
   aboutus: "About Us"
   useface: "Use your Facebook account"
   now: "Now:"
@@ -105,11 +104,14 @@ en:
   #Partners Section
   learn_from_partners: "Learn more from our partners."
   connect_with_organizations: "To get even better prepared as a household, neighborhood, or community, connect with these organizations."
+  #partner 1: American Red Cross local chapter
   partner1: "American Red Cross"
   partner1_description: "provides a variety of trainings including first aid, CPR, and how to prepare for emergencies"
+  #partner 2:
   partner2: "Alachua SERT"
   partner2_description: "offers resources that will teach you how to prepare, organize, and create an emergency response plan."
-  partner3: "Alameda County CERT"
+  #partner 3:
+  partner3: "Alachua County CERT"
   partner3_description: "teaches residents how to care for themselves, their families, and their neighbors in an emergency."
 
 
@@ -258,14 +260,14 @@ en:
   #===========================#
   #About Us Page
   #===========================#
-  for_us_by_us: "safeGNV is for us, by us."
-  our_mission : "Our mission is to enable the people of Gainesville to get prepared. safeGNV was created by the City of Gainesville, with the belief that the best way to do this is to get connected to each other, share resources, and start re-imagining the way we think about emergencies."
+  for_us_by_us: "SafeGNV is for us, by us."
+  our_mission : "Our mission is to enable the people of Gainesville to get prepared. SafeGNV was created by the City of Gainesville, with the belief that the best way to do this is to get connected to each other, share resources, and start re-imagining the way we think about emergencies."
   who : "Who"
   who_p1 : "For Gainesville, by Gainesville."
   who_p2 : "Gainesville is like no other place – and this platform is tailored to the particular quirks, context and people that make up our city."
   what : "What"
-  what_p1 : "A people-centered vision of emergency preparedness. Nobody likes to think about emergencies, but safeGNV takes the mystery out of the process of getting prepared. We do this by telling human stories and providing tools that fit into your daily life."
-  what_p2 : "safeGNV is not a new social network. It’s a platform designed to plug into your existing networks – whether social or digital."
+  what_p1 : "A people-centered vision of emergency preparedness. Nobody likes to think about emergencies, but SafeGNV takes the mystery out of the process of getting prepared. We do this by telling human stories and providing tools that fit into your daily life."
+  what_p2 : "SafeGNV is not a new social network. It’s a platform designed to plug into your existing networks – whether social or digital."
   why : "Why"
   why_p1 : "A little now will mean a lot later; connecting with your network, downloading an app, or watching a video is the first step towards being better prepared for an emergency."
   why_p2 : "Gainesville, along with other cities across the country, is leading the charge for a different kind of emergency prep. Let’s start the movement."
@@ -279,7 +281,7 @@ en:
   #===========================#
   #Map & Updates Page(s)
   #===========================#
-  em_home_title: "safeGNV - In an Emergency"
+  em_home_title: "SafeGNV - In an Emergency"
   in_an_emergency: "In an emergency, this page will be your real-time information hub."
   you_will_find: "You’ll find official updates, partner updates, traffic information, and a crisis map to navigate city resources. Tour this Emergency Mode to better understand how to use it in the event of an emergency."
   map_guide: "Map Guide"
