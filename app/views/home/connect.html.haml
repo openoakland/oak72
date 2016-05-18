@@ -157,12 +157,14 @@
       -#     %strong
       -#       =t(:partner2)
       -#     =t(:partner2_description)
-      -# %li
-      -#   %img(src="/assets/static/partner-cert.png")
-      -#   %p
-      -#     %strong
-      -#       =t(:partner3)
-      -#     =t(:partner3_description)
+      %li
+        %img(src="/assets/static/partner-cert.png")
+        %p
+          %strong
+            =t(:partner3)
+          =t(:partner3_description)
+          %a{ :href => "http://www.alachuacounty.us/depts/publicsafety/em/firststeps/beinvolved/pages/beinvolved.aspx", :title => "www.alachuacounty.us", :target => "_blank" }
+            </br> www.alachuacounty.us
 
 
   = render :partial => "partials/footer"
