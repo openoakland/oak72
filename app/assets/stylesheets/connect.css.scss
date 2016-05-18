@@ -207,8 +207,11 @@
 	}
 	@media(max-width: $mobile-breakpoint-width) {
 		@include retina-image(/assets/static/connect-secondary, cover, jpg);
-}
+		}
 
+	@media(max-width: 400px) {
+	 background-position-x: -314px;
+	}
 }
 
 .learn-more {
