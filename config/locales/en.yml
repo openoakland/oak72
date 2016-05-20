@@ -32,8 +32,8 @@ en:
   hero_image_text: "SafeGNV is Gainesville’s hub for information related to events and emergencies"
   what_is: "What is SafeGNV?"
   what_text: "SafeGNV is your hub for emergency preparedness. You’ll find information about what to do in an emergency, simple steps to get connected, and useful guides to help you get prepared. Share SafeGNV with a friend—and help your loved ones and your community get prepared."
-  why_72: "Why SafeGNV?"
-  why_text: "In a serious emergency, services will be impacted, so a basic rule of thumb is for people to be able to take care of each other for 72 hours before help arrives. That’s just three days—think of it as a long weekend—or nine meals."
+  why_72: "[]"
+  why_text: "[]"
   motto: "We believe in connection, not catastrophe."
   motto_explained: "Actual emergencies look more like people coming together than cities falling apart. SafeGNV is about prompting members of the community to get connected before an emergency—so we can be that much better off when something happens."
   good_news: "Good news. You’re more prepared than you think."
@@ -106,7 +106,7 @@ en:
   connect_with_organizations: "To get even better prepared as a household, neighborhood, or community, connect with these organizations."
   #partner 1: American Red Cross local chapter
   partner1: "American Red Cross"
-  partner1_description: "provides a variety of trainings including first aid, CPR, and how to prepare for emergencies"
+  partner1_description: "provides a variety of trainings including first aid, CPR, and how to prepare for emergencies."
   #partner 2:
   partner2: "Alachua SERT"
   partner2_description: "offers resources that will teach you how to prepare, organize, and create an emergency response plan."
