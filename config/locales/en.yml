@@ -189,11 +189,13 @@ en:
   stories_title : "Resilience comes from community."
   # : "Get inspired by members of our community."
   # : "Hearing stories from people that have lived through an emergency is a powerful way to learn. You are probably more prepared than you think."
-  a_personal_look: "A personal look at emergencies and connection."
-  watch_personal_stories: "Watch stories of people who have lived through disasters—and those who are already fostering connections in Gainesville. No matter your situation, chances are, there’s someone like you with wisdom to share."
+  a_personal_look: "Learn and be inspired to prepare."
+  watch_personal_stories: "Watch stories of people and learn how to get prepared from a few people who are already fostering connections in Gainesville. No matter your situation, chances are, there’s someone like you with wisdom to share."
 
   #STORY TITLES AND CAPTIONS
-  # : ""
+  story_description_1_name : "Kim"
+  story_description_1_area : "Williton"
+  story_description_1_blurb : "This is a story in v2."
   # : ""
   # : ""
   # : ""

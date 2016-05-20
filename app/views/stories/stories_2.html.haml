@@ -14,6 +14,20 @@
       %p
         = t(:watch_personal_stories)
 
+  - [1,2,3].each do |index| 
+    .additional-stories
+      .video-frame
+        %iframe{src: "https://www.youtube.com/embed/Se598b5nv6g", frameborder: "0", allowfullscreen: true}
+      .description-frame
+        .paragraph
+          .bold
+            = t("story_description_#{index}_name".to_sym)
+        .paragraph
+          .bold
+            = t("story_description_#{index}_area".to_sym)
+        .paragraph
+          = t("story_description_#{index}_blurb".to_sym)
+      
   .statement
     .description
       %h2

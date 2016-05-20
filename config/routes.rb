@@ -9,7 +9,7 @@ City72::Application.routes.draw do
                  :registrations => "registrations"
                }
 
-    resources :stories, only: [:index]
+    resources :stories, only: [:index, :show]
 
     root to: 'home#index'
 

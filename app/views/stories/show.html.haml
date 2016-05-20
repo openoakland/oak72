@@ -3,7 +3,8 @@
   %div.main-container.story-detail{"ng-controller" => "storyDetailController"}
     = render :partial => "partials/header"
     .intro-video
-      %iframe.video-opening{src: "http://player.vimeo.com/video/#{@story.video_url.split('/')[-1]}?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933"}
+      %iframe{width: "1020", height: "574", src: "https://www.youtube.com/embed/Se598b5nv6g", frameborder: "0", allowfullscreen: true
+
     %ul.social-media
       %li.twitter
         %a{onClick: "twitterShare()"}
