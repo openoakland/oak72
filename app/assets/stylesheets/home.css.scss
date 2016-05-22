@@ -1,9 +1,22 @@
 /* HOME */
 
+.myrow {
+  @include row();
+}
 
+.col-xs-12 {
+  @include span-columns(12);
+}
+
+@media (max-width: $mobile-breakpoint-width) {
+  .updates-wrapper {
+    height: 300px;
+  }
+}
+  
 .home .page-intro {
-	@include icon($highlight,3.5rem,$arrow,#FFF,490px,45px);
-	position: relative;
+  @include icon($highlight,3.5rem,$arrow,#FFF,490px,45px);
+  position: relative;
 }
 
 .home .page-intro .big-title {
@@ -23,13 +36,28 @@
 
 }
 
-.questions {
-	background-image: url("/assets/static/clock.svg");
-	background-repeat: no-repeat;
-	background-position: 730px 100px;
-	@include row();
-	padding: 0 30px;
+.home-map {
+  float: right;
+}
 
+.questions {
+  @include row();
+  padding: 0 30px 20px 30px;
+
+	h2 {
+	  color: $highlight;
+	  line-height: 1rem;
+	  margin: 3.75rem 0 1rem;
+	  text-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+	}
+}
+@media (max-width: $mobile-breakpoint-width) {
+  .questions h2 {
+    margin-top: 0;
+    line-height: 2rem;
+  }
+}
+.questions {
 	ul {
 		@include row();
 
@@ -37,12 +65,6 @@
 			@include span-columns(6);
 			margin-bottom: 80px;
 
-			h2 {
-				color: $highlight;
-				line-height: 1rem;
-				margin-top: 3.75rem;
-				text-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
-			}
 
 			span {
 				font-size: 1.2rem;
@@ -54,18 +76,40 @@
 
 .connection {
 	@include row();
-	@include retina-image(/assets/static/home-secondary, 683px 420px, jpg);
+
 	background-position: top right;
 	background-repeat: no-repeat;
 	position: relative;
 
-	div.down-arrow {
-		@include span-columns(4.2);
-		@include icon($highlight,3.5rem,$arrow,#FFF,370px,290px);
+	.home-map {
+	  @include span-columns(8);
+
+	  width: 68.2%;
+	  @media (max-width: $mobile-breakpoint-width) {
+	    width: 100%;
+	  }
+	  
+	  height: 473px;
+	  @media (max-width: $mobile-breakpoint-width) {
+	    height: 448px;
+	  }
+	  overflow: hidden;
+	  position: relative;
+	  
+	}
+	
+	.down-arrow {
+		@include span-columns(4);
+
+		margin-right: 0;
 		color: #FFF;
+		@media (max-width: $mobile-breakpoint-width) {
+		  color: $dark-grey;
+		}
+		
 		background-color: $highlight;
 		padding: 0 30px;
-		height: 420px;
+		height: 468px;
 
 		h2 {
 			font-size: 2.05rem;
