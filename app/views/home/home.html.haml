@@ -8,18 +8,18 @@
   .questions.myrow
     .col-xs-12
       %h2
-        = t(:we_believe)
+        = t(:what_is)
     .col-xs-12.believe-text
-      = t(:believe_text)
+      = t(:what_text)
   .connection
     .down-arrow
       %h2
-        = t(:what_is)
+        = t(:we_believe)
       %span
-        = t(:motto_explained)
+        = t(:believe_text)
     .home-map
       %iframe.map{'pointer-events' => 'none', src: @emergency_data.map_url, height: "498", width: '100%'}
-          
+
   .tw-tabs-container{style: 'margin-top: -5px;'}
     %ul.tw-tabs
       %li.active#citizen-updates-tab
