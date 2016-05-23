@@ -36,10 +36,6 @@
 
 }
 
-.home-map {
-  float: right;
-}
-
 .questions {
   @include row();
   padding: 0 30px 20px 30px;
@@ -75,6 +71,30 @@
 }
 
 .connection {
+  .map-button {
+    position: absolute;
+    left: 44%;
+    top: 66%;
+    background-color: $super-orange;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 20%;
+    font-size: 2rem;
+    color: white;
+    text-decoration: underline;
+    a {
+      color: white;
+    }
+  }
+  @media (max-width: $mobile-breakpoint-width) {
+    .map-button {
+      left: 13%;
+      padding: 15px;
+      min-width: 1%;
+      font-size: 1.5rem;
+    }
+  }
+  
 	@include row();
 
 	background-position: top right;
@@ -82,8 +102,9 @@
 	position: relative;
 
 	.home-map {
-	  @include span-columns(8);
 
+	  float: right;
+	  
 	  width: 68.2%;
 	  @media (max-width: $mobile-breakpoint-width) {
 	    width: 100%;
@@ -115,6 +136,9 @@
 			font-size: 2.05rem;
 			margin: 2rem 0 1rem;
 			line-height: 2.7rem;
+			@media (max-width: $mobile-breakpoint-width) {
+			  display: none;
+			}
 		}
 
 		span {

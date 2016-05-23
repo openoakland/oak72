@@ -9,8 +9,6 @@
     .col-xs-12
       %h2
         = t(:we_believe)
-    .col-xs-12.believe-text
-      = t(:believe_text)
   .connection
     .down-arrow
       %h2
@@ -19,7 +17,11 @@
         = t(:motto_explained)
     .home-map
       %iframe.map{'pointer-events' => 'none', src: @emergency_data.map_url, height: "498", width: '100%'}
-          
+        
+    .map-button
+      %a{href: '/em/home'}
+        safeGNV Map and Updates
+      
   .tw-tabs-container{style: 'margin-top: -5px;'}
     %ul.tw-tabs
       %li.active#citizen-updates-tab
