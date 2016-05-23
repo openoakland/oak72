@@ -5,24 +5,52 @@
     .big-title{:style => "background-image: url(#{"/assets/static/home-main.jpg"})"}
       %h1
         = t(:hero_image_text)
-  .questions
-    %ul
-      %li
-        %h2
-          = t(:what_is)
-        %span
-          = t(:what_text)
-      %li
-        %h2
-          = t(:why_72)
-        %span
-          = t(:why_text)
-  .connection{:style => "background-image: url(#{"assets/static/home-secondary.jpg"})"}
-    %div.down-arrow
+  .questions.myrow
+    .col-xs-12
       %h2
-        = t(:motto)
+        = t(:we_believe)
+  .connection
+    .down-arrow
+      %h2
+        = t(:what_is)
       %span
         = t(:motto_explained)
+    .home-map
+      %iframe.map{'pointer-events' => 'none', src: @emergency_data.map_url, height: "498", width: '100%'}
+        
+    .map-button
+      %a{href: '/em/home'}
+        safeGNV Map and Updates
+      
+  .tw-tabs-container{style: 'margin-top: -5px;'}
+    %ul.tw-tabs
+      %li.active#citizen-updates-tab
+        %a{href:"#tab-one"}
+          %h3
+            = t(:official_updates)
+      %li#official-reports-tab
+        %a{href:"#tab-two"}
+          %h3
+            = t(:partner_updates)
+      %li#transportation-updates-tab
+        %a{href:"#tab-three"}
+          %h3
+            = t(:transportation_updates)
+  .main-container.updates-wrapper{style: 'overflow: hidden'}
+    .updates
+      .citizen-reports
+        <style type="text/css">#twitter-widget-1{width:70%}</style>
+        <a class="twitter-timeline" data-widget-id="#{@emergency_data.citizen_timeline_id}" width="500px" height="660" data-chrome="noheader nofooter noborders" data-aria-polite="assertive"></a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      .official-reports
+        <style type="text/css">#twitter-widget-2{width:70%}</style>
+        <a class="twitter-timeline" data-widget-id="#{@emergency_data.partner_timeline_id}" width="500px" height="660" data-chrome="noheader nofooter noborders" data-aria-polite="assertive"></a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      .status
+        <style type="text/css">#twitter-widget-3{width:70%}</style>
+        <a class="twitter-timeline" data-widget-id="#{@emergency_data.transportation_timeline_id}" width="500px" height="660" data-chrome="noheader nofooter noborders" data-aria-polite="assertive" >Tweets by @511SFBay</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
   .learn
     %h1
       = t(:good_news)
