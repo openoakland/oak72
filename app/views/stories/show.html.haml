@@ -3,7 +3,7 @@
   %div.main-container.story-detail{"ng-controller" => "storyDetailController"}
     = render :partial => "partials/header"
     .intro-video
-      %iframe{width: "1020", height: "574", src: "https://www.youtube.com/embed/Se598b5nv6g", frameborder: "0", allowfullscreen: true
+      %iframe{width: "1020", height: "574", src: "https://www.youtube.com/embed/zEK1TqeYrno", frameborder: "0", allowfullscreen: true}
 
     %ul.social-media
       %li.twitter
@@ -67,7 +67,7 @@
             %h4 #{@story.item2_subtitle}
             %p &ldquo;#{@story.item2_quote}&rdquo;
             = link_to @story.item2_link.presence || "Get Connected", connect_path
-          
+
     .similar
       %h3 Similar to #{@story.person}
       %ul.story-list

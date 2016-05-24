@@ -5,8 +5,8 @@
 = javascript_include_tag "video_modal"
 .main-container.stories
   = render :partial => "partials/header"
-  %iframe{src: "https://www.youtube.com/embed/Se598b5nv6g", frameborder: "0", allowfullscreen: true}
-        
+  %iframe{src: "https://www.youtube.com/embed/zEK1TqeYrno", frameborder: "0", allowfullscreen: true}
+
   .intro
     .personal-look
       %h2
@@ -14,10 +14,10 @@
       %p
         = t(:watch_personal_stories)
 
-  - [1,2,3].each do |index| 
+  - [1,2,3].each do |index|
     .additional-stories
       .video-frame
-        %iframe{src: "https://www.youtube.com/embed/Se598b5nv6g", frameborder: "0", allowfullscreen: true}
+        %iframe{src: "https://www.youtube.com/embed/zEK1TqeYrno", frameborder: "0", allowfullscreen: true}
       .description-frame
         .paragraph
           .bold
@@ -27,7 +27,7 @@
             = t("story_description_#{index}_area".to_sym)
         .paragraph
           = t("story_description_#{index}_blurb".to_sym)
-      
+
   .statement
     .description
       %h2
