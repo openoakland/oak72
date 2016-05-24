@@ -2,26 +2,28 @@
 .main-container.home
   = render :partial => "partials/header"
   .page-intro
-    .big-title{:style => "background-image: url(#{"/assets/static/home-main.jpg"})"}
+    .home-title{:style => "background-image: url(#{"/assets/static/home-main.jpg"})"}
       %h1
         = t(:hero_image_text)
   .questions.myrow
     .col-xs-12
       %h2
         = t(:we_believe)
+      %span
+        = t(:motto_explained)
   .connection
     .down-arrow
       %h2
         = t(:what_is)
       %span
-        = t(:motto_explained)
+        = t(:what_text)
     .home-map
       %iframe.map{'pointer-events' => 'none', src: @emergency_data.map_url, height: "498", width: '100%'}
-        
+
     .map-button
       %a{href: '/em/home'}
-        safeGNV Map and Updates
-      
+        View Larger Map
+
   .tw-tabs-container{style: 'margin-top: -5px;'}
     %ul.tw-tabs
       %li.active#citizen-updates-tab
@@ -36,7 +38,7 @@
         %a{href:"#tab-three"}
           %h3
             = t(:transportation_updates)
-  .main-container.updates-wrapper{style: 'overflow: hidden'}
+  .main-container.home-updates-wrapper{style: 'overflow: hidden'}
     .updates
       .citizen-reports
         <style type="text/css">#twitter-widget-1{width:70%}</style>

@@ -8,33 +8,84 @@
   @include span-columns(12);
 }
 
+.home-updates-wrapper {
+	height: 600px;
+}
+
 @media (max-width: $mobile-breakpoint-width) {
   .updates-wrapper {
     height: 300px;
   }
 }
-  
+
 .home .page-intro {
-  @include icon($highlight,3.5rem,$arrow,#FFF,490px,45px);
+  @include icon($highlight,3.5rem,$arrow,#FFF,320px,45px);
   position: relative;
 }
 
-.home .page-intro .big-title {
-	@include retina-image(/assets/static/home-main, 1020px 538px, jpg);
+
+
+.home .page-intro .home-title {
+	@include retina-image(/assets/static/home-main, 1020px 372px, jpg);
 	background-position: left top;
 	text-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
 }
 
-.home .page-intro .big-title {
+.home .page-intro .home-title {
 
 	h1 {
 		font-size: 3.5rem;
-		margin-top: 3rem;
+		// margin-top: 3rem;
 		text-shadow: 0px 0px 11px rgba(0,0,0,0.63);
 		padding: 0 5rem;
 	}
 
 }
+
+.home-title {
+		background: url() no-repeat left top;
+		width: 1020px;
+		height: 372px;
+		text-align: center;
+		padding-top: 9.3rem;
+		text-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+
+		h1 {
+			font-family: $font-bold;
+			font-size: 6.25rem;
+			margin: 0;
+			line-height: 1;
+			color: #FFF;
+		}
+
+		span {
+			display: block;
+			margin: 0.6rem 0 0;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			color: #FFF;
+		}
+
+	strong {
+		display: block;
+		font-family: $font-regular;
+	}
+
+	h2 {
+		margin: 1.6rem 0 0 0;
+		color: $dark-grey;
+		font-family: $font-bold;
+	}
+
+	p {
+		@include intro-paragraph;
+		margin: 0.1rem 0 1rem 0;
+		width: 44rem;
+	}
+}
+
+
+
 
 .questions {
   @include row();
@@ -45,6 +96,10 @@
 	  line-height: 1rem;
 	  margin: 3.75rem 0 1rem;
 	  text-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+	}
+
+	span {
+		font-size: 1.2rem;
 	}
 }
 @media (max-width: $mobile-breakpoint-width) {
@@ -63,7 +118,7 @@
 
 
 			span {
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 				@include span-columns(11);
 			}
 		}
@@ -73,28 +128,35 @@
 .connection {
   .map-button {
     position: absolute;
-    left: 44%;
+    left: 49%;
     top: 66%;
     background-color: $super-orange;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 20px 40px;
+    border-radius: 0px;
     min-width: 20%;
     font-size: 2rem;
     color: white;
-    text-decoration: underline;
+    font-family: "HelveticaNeueLT-Bold";
+
     a {
       color: white;
+      text-decoration: none;
+    }
+    a hover {
+    	color: white;
+    	text-decoration: underline;
     }
   }
   @media (max-width: $mobile-breakpoint-width) {
     .map-button {
-      left: 13%;
-      padding: 15px;
+      left: 15%;
+      // padding: 15px;
       min-width: 1%;
       font-size: 1.5rem;
+      top: 70%;
     }
   }
-  
+
 	@include row();
 
 	background-position: top right;
@@ -104,33 +166,32 @@
 	.home-map {
 
 	  float: right;
-	  
+
 	  width: 68.2%;
 	  @media (max-width: $mobile-breakpoint-width) {
 	    width: 100%;
 	  }
-	  
+
 	  height: 473px;
 	  @media (max-width: $mobile-breakpoint-width) {
 	    height: 448px;
 	  }
 	  overflow: hidden;
 	  position: relative;
-	  
+
 	}
-	
+
 	.down-arrow {
 		@include span-columns(4);
-
 		margin-right: 0;
 		color: #FFF;
-		@media (max-width: $mobile-breakpoint-width) {
-		  color: $dark-grey;
-		}
-		
 		background-color: $highlight;
 		padding: 0 30px;
 		height: 468px;
+
+		@media (max-width: $mobile-breakpoint-width) {
+		color: $dark-grey;
+			}
 
 		h2 {
 			font-size: 2.05rem;
@@ -156,7 +217,7 @@
 	h1 {
 		color: $dark-grey;
 		padding: 0 30px;
-		margin: 6.5rem 0 5rem;
+		margin: 5rem 0 5.5rem 0;
 		font-family: $font-bold;
 		line-height: 2.65rem;
 	}
