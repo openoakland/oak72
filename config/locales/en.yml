@@ -184,9 +184,7 @@ en:
   #===========================#
   #View Stories Page
   #===========================#
-  stories_title : "Resilience comes from community."
-  # : "Get inspired by members of our community."
-  # : "Hearing stories from people that have lived through an emergency is a powerful way to learn. You are probably more prepared than you think."
+
   a_personal_look: "Learn and be inspired to prepare."
   watch_personal_stories: "Watch stories of people and learn how to get prepared from a few people who are already fostering connections in Gainesville. No matter your situation, chances are, there’s someone like you with wisdom to share."
 
@@ -247,7 +245,7 @@ en:
   during_3_description_html: "Ensure a  <a href='%{link}' target='_blank'>supply of water</a> for sanitary purposes such as cleaning and flushing toilets. Fill the bathtub and large containers with water."
   #during_3_link: https://www.ready.gov/managing-water
   after_1_title: "Find your family."
-  after_1_description_html: "If you are separated from your family, use your  <a href='%{link}' target='_blank'>family communications plan</a>, contact the American Red Cross (ARC) at 1-800-RED-CROSS/1-800-733-2767 or visit the ARC Safe and Well site:  <a href='%{link}' target='_blank'>www.safeandwell.org</a>."
+  after_1_description_html: "If you are separated from your family, use your  <a href='%{link}' target='_blank'>family communications plan</a>, contact the American Red Cross (ARC) at 1-800-RED-CROSS/1-800-733-2767 or visit the ARC Safe and Well site: <a href='%{link}' target='_blank'>www.safeandwell.org</a>."
   #LINK1: http://www.safegnv.org/plan#
   #link2: https://safeandwell.communityos.org/cms/index.php
   after_2_title: "Inspect your home for damage."
@@ -261,21 +259,21 @@ en:
   #About Us Page
   #===========================#
   for_us_by_us: "SafeGNV is for us, by us."
-  our_mission : "Our mission is to enable the people of Gainesville to get connected with real-time information about events and emergencies. SafeGNV was created by the City of Gainesville, with the belief that the best way to do this is to get connected to each other, share resources, and put the citizen at the center of our thinking."
-  who : "Who"
-  who_p1 : "For Gainesville, by Gainesville."
-  who_p2 : "Gainesville is like no other place – and this platform is tailored to the particular quirks, context and people that make up our city."
-  what : "What"
-  what_p1 : "A citizen-centered vision of connecting people with real time information. We do this by providing tools and information that fit into your daily life through SafeGNV."
-  what_p2 : "SafeGNV is not a new social network. It’s a platform designed to plug into your existing networks – whether social or digital."
-  why : "Why"
-  why_p1 : "A little now will mean a lot later; connecting with your network, downloading an app, or watching a video is the first step towards being better informed."
-  why_p2 : "Gainesville, along with other cities across the country, is leading the charge for a different kind of connection with citizens. Let’s start the movement."
-  image_credits : "Image Credits"
-  photographer_1_html : "\"<a href='%{link}' target='_blank'>Can I See the View, Too?</a>\" by Chris Lindamood"
-  photographer_2_html : "\"<a href='%{link}' target='_blank'>Viva 500 Geocaching</a>\" by Dana Moser"
-  photographer_3_html : "\"<a href='%{link}' target='_blank'>Doug and Gus</a>\" by Farol Tomson"
-  photographer_4_html : "\"<a href='%{link}' target='_blank'>Paynes Prairie Watching</a>\" by Marcy Hairston"
+  our_mission: "Our mission is to enable the people of Gainesville to get connected with real-time information about events and emergencies. SafeGNV was created by the City of Gainesville, with the belief that the best way to do this is to get connected to each other, share resources, and put the citizen at the center of our thinking."
+  who: "Who"
+  who_p1: "For Gainesville, by Gainesville."
+  who_p2: "Gainesville is like no other place – and this platform is tailored to the particular quirks, context and people that make up our city."
+  what: "What"
+  what_p1: "A citizen-centered vision of connecting people with real time information. We do this by providing tools and information that fit into your daily life through SafeGNV."
+  what_p2: "SafeGNV is not a new social network. It’s a platform designed to plug into your existing networks – whether social or digital."
+  why: "Why"
+  why_p1: "A little now will mean a lot later; connecting with your network, downloading an app, or watching a video is the first step towards being better informed."
+  why_p2: "Gainesville, along with other cities across the country, is leading the charge for a different kind of connection with citizens. Let’s start the movement."
+  image_credits: "Image Credits"
+  photographer_1_html: "\"<a href='%{link}' target='_blank'>Can I See the View, Too?</a>\" by Chris Lindamood"
+  photographer_2_html: "\"<a href='%{link}' target='_blank'>Viva 500 Geocaching</a>\" by Dana Moser"
+  photographer_3_html: "\"<a href='%{link}' target='_blank'>Doug and Gus</a>\" by Farol Tomson"
+  photographer_4_html: "\"<a href='%{link}' target='_blank'>Paynes Prairie Watching</a>\" by Marcy Hairston"
 
 
   #===========================#
@@ -311,7 +309,6 @@ en:
   finish: "Finish"
   next: "Next"
 
-
   #===========================#
   #Footer Text
   #===========================#
@@ -322,4 +319,3 @@ en:
   city72_toolkit: "City72 Toolkit"
   resources_and_partners: "Resources and Partners"
   spread_the_word: "Spread the word"
-
