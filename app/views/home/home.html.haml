@@ -24,12 +24,13 @@
       .map-button
         View Larger Map
 
-  .mobile-twitter-option.mybold
-    .col-xs-9
-      Read updates from Twitter.
-    .col-xs-3.right-flush.arrow
-      >
-  .tw-tabs-container{style: 'margin-top: -5px;'}
+  %a{href: '/em/home#mobile-updates'}
+    .mobile-twitter-option.mybold
+      .col-xs-9
+        Read updates from Twitter.
+      .col-xs-3.right-flush.arrow
+        
+  .tw-tabs-container.mobile-home{style: 'margin-top: -5px;'}
     %ul.tw-tabs
       %li.active#citizen-updates-tab
         %a{href:"#tab-one"}
@@ -43,7 +44,7 @@
         %a{href:"#tab-three"}
           %h3
             = t(:transportation_updates)
-  .main-container.home-updates-wrapper{style: 'overflow: hidden'}
+  .main-container.home-updates-wrapper.mobile-home{style: 'overflow: hidden'}
     .updates
       .citizen-reports
         <style type="text/css">#twitter-widget-1{width:70%}</style>

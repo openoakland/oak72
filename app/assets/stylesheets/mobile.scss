@@ -39,7 +39,7 @@ $mobile-padding: 20px;
   }
 }
 @media (max-width: $mobile-breakpoint-width) {
-  .tw-tabs-container {
+  .tw-tabs-container.mobile-home {
     display: none;
   }
   .home-updates-wrapper {
@@ -54,6 +54,7 @@ $mobile-padding: 20px;
     padding: 20px;
     .arrow {
       margin-top: 20px;
+      background-image: image-url('static/arrow-right.svg');
     }
   }
 }
@@ -400,6 +401,7 @@ $mobile-padding: 20px;
 				font-size: 1rem;
 				margin-bottom: 0;
 				line-height: 1.375;
+				color: white;
 			}
 
 			&:before {
