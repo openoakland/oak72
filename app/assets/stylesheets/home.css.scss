@@ -1,11 +1,32 @@
 /* HOME */
 
+.mybold {
+  font-family: $font-bold;
+  font-weight: bold;
+}
+
 .myrow {
   @include row();
 }
 
 .col-xs-12 {
   @include span-columns(12);
+}
+
+.col-xs-6 {
+  @include span-columns(6);
+}
+
+.col-xs-9 {
+  @include span-columns(9);
+}
+
+.col-xs-3 {
+  @include span-columns(3);
+}
+
+.right-flush {
+  text-align: right;
 }
 
 .home-updates-wrapper {
@@ -150,14 +171,21 @@
   }
   @media (max-width: $mobile-breakpoint-width) {
     .map-button {
-      left: 15%;
-      // padding: 15px;
-      min-width: 1%;
-      font-size: 1.5rem;
-      top: 70%;
+      left: 8%;
+      width: 84%;
+      height: 6.7rem;
+      font-size: 1.6rem;
+      bottom: 10%;
+      text-align: center;
+      vertical-align: middle;
+      &:before {
+	content: ' ';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+      }
     }
   }
-
 	@include row();
 
 	background-position: top right;

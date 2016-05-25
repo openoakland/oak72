@@ -33,6 +33,31 @@ $mobile-padding: 20px;
 	}
 }
 
+@media (min-width: $mobile-breakpoint-width) {
+  .mobile-twitter-option {
+    display: none;
+  }
+}
+@media (max-width: $mobile-breakpoint-width) {
+  .tw-tabs-container {
+    display: none;
+  }
+  .home-updates-wrapper {
+    display: none;
+  }
+  
+  .mobile-twitter-option {
+    @include row();
+    background-color: $highlight;
+    color: white;
+    font-size: 1.6rem;
+    padding: 20px;
+    .arrow {
+      margin-top: 20px;
+    }
+  }
+}
+
 .main-container {
 	padding: 0;
 	background-color: #fff;

@@ -20,10 +20,15 @@
     .home-map
       %iframe.map{'pointer-events' => 'none', src: @emergency_data.map_url, height: "498", width: '100%'}
 
-    .map-button
-      %a{href: '/em/home'}
+    %a{href: '/em/home'}
+      .map-button
         View Larger Map
 
+  .mobile-twitter-option.mybold
+    .col-xs-9
+      Read updates from Twitter.
+    .col-xs-3.right-flush.arrow
+      >
   .tw-tabs-container{style: 'margin-top: -5px;'}
     %ul.tw-tabs
       %li.active#citizen-updates-tab
