@@ -33,28 +33,28 @@
   .tw-tabs-container.mobile-home{style: 'margin-top: -5px;'}
     %ul.tw-tabs
       %li.active#citizen-updates-tab
-        %a{href:"#tab-one"}
+        %a.tab-1{href:"#tab-one"}
           %h3
             = t(:official_updates)
       %li#official-reports-tab
-        %a{href:"#tab-two"}
+        %a.tab-2{href:"#tab-two"}
           %h3
             = t(:partner_updates)
       %li#transportation-updates-tab
-        %a{href:"#tab-three"}
+        %a.tab-3{href:"#tab-three"}
           %h3
             = t(:transportation_updates)
   .main-container.home-updates-wrapper.mobile-home{style: 'overflow: hidden'}
     .updates
-      .citizen-reports
+      .citizen-reports.twitter-tab
         <style type="text/css">#twitter-widget-1{width:70%}</style>
         <a class="twitter-timeline" data-widget-id="#{@emergency_data.citizen_timeline_id}" width="500px" height="660" data-chrome="noheader nofooter noborders" data-aria-polite="assertive"></a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      .official-reports
+      .official-reports.twitter-tab
         <style type="text/css">#twitter-widget-2{width:70%}</style>
         <a class="twitter-timeline" data-widget-id="#{@emergency_data.partner_timeline_id}" width="500px" height="660" data-chrome="noheader nofooter noborders" data-aria-polite="assertive"></a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      .status
+      .status.twitter-tab
         <style type="text/css">#twitter-widget-3{width:70%}</style>
         <a class="twitter-timeline" data-widget-id="#{@emergency_data.transportation_timeline_id}" width="500px" height="660" data-chrome="noheader nofooter noborders" data-aria-polite="assertive" >Tweets by @511SFBay</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
