@@ -2,22 +2,25 @@
 
 
 .plan {
+  .opening {
+    h1 {
+      padding-right: 5rem;
+    }
+  }    
+  h2 {
+    font-size: 2.125rem;
+    line-height: 1.625rem;
+    color: $dark-grey;
+  }
 
-	h2 {
-		font-size: 2.125rem;
-		line-height: 1.625rem;
-		color: $dark-grey;
-	}
-
-	.em-plan {
-		@include retina-image(/assets/static/plan-main, cover, jpg);
-
-		h1 {
-			margin-top: 2.5rem;
-			text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
-
-		}
-
+  .em-plan {
+    @include retina-image(/assets/static/plan-main, cover, jpg);
+    
+    h1 {
+      margin-top: 2.5rem;
+      text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
+    }
+    
 		div {
 
 			p {
