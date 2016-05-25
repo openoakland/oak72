@@ -30,10 +30,10 @@ en:
   #Home Landing Page Strings
   #===========================#
   hero_image_text: "Gainesville’s hub for events and emergency information"
-  what_is: "What is SafeGNV?"
-  what_text: "With the goal of putting Gainesville’s citizens at the center, we have developed SafeGNV. You’ll find real-time information about situations that impact your life, simple steps to get connected, and useful guides to help you get prepared. Share SafeGNV with a friend—help your loved ones and your community stay informed."
   motto: "We believe in connection by putting the citizen at the center."
   motto_explained: "Actual emergencies look more like people coming together than cities falling apart. SafeGNV is about prompting members of the community to get connected with real-time information so we can be that much better off when something happens."
+  what_is: "What is SafeGNV?"
+  what_text: "With the goal of putting Gainesville’s citizens at the center, we have developed SafeGNV. You’ll find real-time information about situations that impact your life, simple steps to get connected, and useful guides to help you get prepared. Share SafeGNV with a friend—help your loved ones and your community stay informed."
   good_news: "Good news. You’re more connected than you think."
   learn_more: "Learn more..."
   gc_explained: "Make the most of your existing networks of friends, family, neighbors, and colleagues—so you can get help, and help others."
