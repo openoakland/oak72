@@ -1,20 +1,18 @@
 /* ABOUT */
 
 .opening.about-intro {
-	@include retina-image(/assets/placeholder-about, 750px 417px, jpg);
+	@include retina-image(/assets/static/about-main, 750px 417px, jpg);
 }
 
 .about-intro {
 
 	h1 {
 		max-width: 725px;
-		// margin-top: 30px;
 	}
 
 	h1 {
 		margin-top: 2.2rem;
 		text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
-		padding: 190px 200px 4px 29px;
 	}
 
 	div {
@@ -68,9 +66,11 @@
 }
 
 .about-data {
-	@include outer-container;
-	margin-top: 120px;
-	margin-bottom: 5rem;
+  @include outer-container;
+  @include row();
+
+	margin-top: 50px;	
+	margin-bottom: 1rem;
 	padding: 0 30px;
 
 	li {
@@ -78,9 +78,14 @@
 		padding-right: 0.6rem;
 	}
 
+	@media(min-width: $mobile-breakpoint-width) {
+	  h2 {
+	    padding-top: 200px;
+	  }
+	}
+	  
 	h2 {
 		@include col-title;
-		margin-bottom: 0;
 		line-height: 2.5rem;
 	}
 
@@ -92,19 +97,24 @@
 	.about-what,
 	.about-why {
 		width: 302px;
-		height: 172px;
+
 	}
 
-	.about-who {
-		@include retina-image(/assets/static/about-us-1, 302px 172px, jpg);
-	}
+	@media(min-width: $mobile-breakpoint-width) {
+	  .about-who {
+	    @include retina-image(/assets/static/about-us-1, 302px 200px, jpg);
+	    background-repeat: no-repeat;
+	  }
 
-	.about-what {
-		@include retina-image(/assets/static/about-us-2, 302px 172px, jpg);
-	}
-
-	.about-why {
-		@include retina-image(/assets/static/about-us-3, 302px 172px, jpg);
+	  .about-what {
+	    @include retina-image(/assets/static/about-us-2, 302px 200px, jpg);
+	    background-repeat: no-repeat;
+	  }
+	  
+	  .about-why {
+	    @include retina-image(/assets/static/about-us-3, 302px 200px, jpg);
+	    background-repeat: no-repeat;
+	  }
 	}
 
 }
@@ -112,10 +122,14 @@
 
 /* Credits */
 .image-credits {
-	padding: $gutter;
-	margin-bottom: 7rem;
+  padding-left: 30px;
+  margin: 1.5rem 0 3rem;
+
 
 	h2 {
-		@include col-title;
+	  @include col-title;
+	}
+	li p {
+	  max-width: 80%;
 	}
 }

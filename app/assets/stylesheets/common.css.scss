@@ -1,0 +1,95 @@
+.myrow {
+  @include row();
+}
+
+.opening {
+  h1 {
+
+    @include span-columns(8.62938893);
+    font-family: $font-bold;
+    font-size: $h1-default-size;
+    line-height: 4.5625rem;
+    color: #FFF;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 90%;
+    @media(max-width: $mobile-breakpoint-width) {
+      font-size: $h1-mobile-size;
+
+    }
+
+    @media(max-width: $mobile-breakpoint-width) {
+      line-height: 3rem;
+    }
+
+    /* page specific changes */
+    &.get-connected {
+    }
+    &.make-a-plan {
+    }
+    &.gather-supplies {
+    }
+  }
+
+
+  &.hero {
+    float: left;
+    position: relative;
+    @media(min-width: $mobile-breakpoint-width) {
+      height: 417px;
+    }
+    @media(max-width: $mobile-breakpoint-width) {
+      height: $background-herobox-height;
+    }
+  }
+  &.explain-text {
+    float: left;
+    color: #FFF;
+    background-color: $highlight;
+    padding: 0 30px 0 30px;
+    margin-right: 0px;
+
+    p {
+      font-size: 1.1875rem;
+      line-height: 1.6875rem;
+      margin-top: 1.9rem;
+    }
+  }
+
+  @media(min-width: $mobile-breakpoint-width) {
+    &.hero {
+      width: $right-column-width;
+    }
+  }
+  @media(max-width: $mobile-breakpoint-width) {
+    &.hero {
+      width: 100%;
+    }
+  }
+  @media(min-width: $mobile-breakpoint-width) {
+    &.explain-text {
+      width: $left-column-width;
+      height: 417px;
+    }
+  }
+  @media(max-width: $mobile-breakpoint-width) {
+    &.explain-text {
+      width: 100%;
+      padding: 10px;
+      min-height: 30px;
+    }
+  }
+	@include row(block,RTL);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+		background-size: cover;
+	position: relative;
+
+	.explain-text {
+		@include span-columns(3.38061107);
+	}
+}

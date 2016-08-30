@@ -8,8 +8,8 @@ development:
   encoding: unicode
   database: city72_development
   pool: 5
-  username: city72
-  password: city72
+  username: pg_dev
+  password: pg_dev_password
   host: localhost
 
 # Warning: The database defined as "test" will be erased and

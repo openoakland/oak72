@@ -5,11 +5,11 @@ City72::Application.routes.draw do
     end
 
     devise_for :admin_users, :controllers => {
-                 # this way we can avoid user's to register
+                 # this way we can avoid making users register
                  :registrations => "registrations"
                }
 
-    resources :stories, only: [:index]
+    resources :stories, only: [:index, :show]
 
     root to: 'home#index'
 

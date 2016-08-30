@@ -3,25 +3,27 @@
 = javascript_include_tag "connect"
 .main-container.connect
   = render :partial => "partials/header"
-  .opening{:style => "background-image: url(#{"assets/static/connect-main.jpg"})"}
-    %h1
-      = t(:allabout)
-    %div
+  .myrow
+    .opening.explain-text
       %p
         = t(:connectmain)
+    .opening.hero
+      %h1.get-connected
+        = t(:allabout)
+
   .existing-networks
     .use
       %h2
         = t(:networks)
       %p.intro-networks
         = t(:inevent)
-    .know
-      %h3
-        = t(:learnabout)
-      %p
-        = t(:learnaboutdetails)
-      %a{href:"about"}
-        = t(:aboutus)
+    -# .know
+    -#   %h3
+    -#     = t(:learnabout)
+    -#   %p
+    -#     = t(:learnaboutdetails)
+    -#   %a{href:"about"}
+    -#     = t(:aboutus)
   .networks-list
     %ul
       %li.facebook
@@ -45,11 +47,11 @@
           %strong
             =t(:now)
             <br/>
-          =t(:use_twitter_now)
+          =t(:use_twitter_now_html, twitter_fav_1: link_to(t('twitter_fav_1'), 'https://twitter.com/FLSERT', target: :blank),twitter_fav_2: link_to(t('twitter_fav_2'), 'https://twitter.com/Alachua_Co_EM', target: :blank), twitter_fav_3: link_to(t('twitter_fav_3'), 'https://twitter.com/GFR1882', target: :blank), twitter_fav_4: link_to(t('twitter_fav_4'), 'https://twitter.com/GainesvilleGov', target: :blank))
         %p
           %strong
             =t(:in_an_emergency_heading)
-          =t(:use_twitter_emergency)
+          =t(:use_twitter_emergency_html, twitter_tag: link_to(t('twitter_tag'), 'https://twitter.com/search?f=tweets&q=%23safeGNV&src=typd', target: :blank))
 
       %li.drive
         %h3
@@ -64,21 +66,46 @@
             <br/>
           =t(:use_cloud_emergency)
 
-
-      %li.nixle
+      %li.nextdoor
         %h3
-          = t(:usenixle)
-        %p.now
+          =t(:use_nextdoor)
+        %p
           %strong
             =t(:now)
-            <br/>
-          =t(:whynixle)
+          =t(:use_nextdoor_now)
         %p
           %strong
             =t(:in_an_emergency_heading)
             <br/>
-          =t(:nixle_emergency)
-        %a{:href => "https://nixle.com/city/ca/oakland/", :target => "_blank"}
+          =t(:use_nextdoor_emergency)
+
+      %li.airbnb
+        %h3
+          =t(:use_airbnb)
+        %p
+          %strong
+            =t(:now)
+          =t(:use_airbnb_now)
+        %p
+          %strong
+            =t(:in_an_emergency_heading)
+            <br/>
+          =t(:use_airbnb_emergency)
+
+      %li.txt_updates
+        %h3
+          = t(:use_txt_updates)
+        %p.now
+          %strong
+            =t(:now)
+            <br/>
+          =t(:why_txt_updates)
+        %p
+          %strong
+            =t(:in_an_emergency_heading)
+            <br/>
+          =t(:txt_updates_emergency)
+        %a{:href => "http://public.coderedweb.com/cne/en-US/6EF661CA2EF3", :target => "_blank"}
           =t(:start_now)
 
 
@@ -122,21 +149,22 @@
           %strong
             =t(:partner1)
           =t(:partner1_description)
-          %a{ :href => "http://www.redcross.org/local/ca/san-francisco", :title => "www.redcross.org", :target => "_blank" }
+          %a{ :href => "http://www.redcross.org/fl/gainesville", :title => "www.redcross.org", :target => "_blank" }
             </br> www.redcross.org
-      %li
-        %img(src="/assets/static/partner-core.png")
-        %p
-          %strong
-            =t(:partner2)
-          =t(:partner2_description)
+      -# %li
+      -#   %img(src="/assets/static/partner-core.png")
+      -#   %p
+      -#     %strong
+      -#       =t(:partner2)
+      -#     =t(:partner2_description)
       %li
         %img(src="/assets/static/partner-cert.png")
         %p
           %strong
             =t(:partner3)
           =t(:partner3_description)
-
+          %a{ :href => "http://www.alachuacounty.us/depts/publicsafety/em/firststeps/beinvolved/pages/beinvolved.aspx", :title => "www.alachuacounty.us", :target => "_blank" }
+            </br> www.alachuacounty.us
 
 
   = render :partial => "partials/footer"

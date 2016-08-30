@@ -2,12 +2,13 @@
 = javascript_include_tag "supplies"
 .main-container.things
   = render :partial => "partials/header"
-  .opening.supplies
-    %h1
-      = t(:youre_more_prepared)
-    %div
+  .myrow
+    .opening.explain-text
       %p 
         = t(:youre_more_prepared_explained)
+    .opening.hero.supplies
+      %h1.gather-supplies
+        = t(:youre_more_prepared)
   .action-bar
     %ul.tabs
       %li.essentials-trigger.active

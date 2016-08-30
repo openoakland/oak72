@@ -2,22 +2,25 @@
 
 
 .plan {
+  .opening {
+    h1 {
+      padding-right: 5rem;
+    }
+  }    
+  h2 {
+    font-size: 2.125rem;
+    line-height: 1.625rem;
+    color: $dark-grey;
+  }
 
-	h2 {
-		font-size: 2.125rem;
-		line-height: 1.625rem;
-		color: $dark-grey;
-	}
-
-	.em-plan {
-		@include retina-image(/assets/static/plan-main, 750px 417px, jpg);
-
-		h1 {
-			margin-top: 2.5rem;
-			text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
-			padding: 190px 130px 4px 29px;
-		}
-
+  .em-plan {
+    @include retina-image(/assets/static/plan-main, cover, jpg);
+    
+    h1 {
+      margin-top: 2.5rem;
+      text-shadow: 0px 1px 7px rgba(0,0,0,0.53);
+    }
+    
 		div {
 
 			p {
@@ -38,7 +41,7 @@
 
 .meet-up {
 	@include row();
-	margin: 3.75rem 0 6rem;
+	margin: 2.75rem 0 5rem;
 
 	h2,
 	p {

@@ -1,25 +1,23 @@
 Included in this guide:
-  * [About OAK72](#about_oak72)
-  * [Production Deployment](#production_deployment)
+  * [About safeGNV](#about-safegnv)
+  * [Deploy on Heroku](#deploy-on-heroku)
   * [Development Environment Setup](#development-environment-setup)
 
-# About OAK72
+# About SafeGNV
 
-**OAK72 was derived from City72**. For more information about the toolkit, visit [toolkit.sf72.org](http://toolkit.sf72.org). The main differences between OAK72 and City72 are:
+**SafeGNV was derived from City72**. Visit SafeGNV at [safegnv.org](http://safegnv.org). For more information about the toolkit, visit [toolkit.sf72.org](http://toolkit.sf72.org). 
 
-• OAK72 is abstracted so that all the text strings come from a locale file. This change was the first step in allowing viewers to toggle between different languages. The site is a [few significant features](https://github.com/openoakland/oak72/issues/11) away from being viewable in multiple languages.
+**Differences:**
 
-• OAK72 is less reliant on a content management system (CMS). Many sections of the CMS assumed that the site would exist in English only. Many sections of the CMS have been replaced with brief instructions on where in the codebase to make changes.
+• SafeGNV is set up so that all the text strings come from a locale file.
 
-• OAK72 is intended as a guide for getting prepared and connected. Any reference to checking back after an emergency has been removed.
+• SafeGNV is less reliant on a content management system (CMS). Instead, you would customize the site by editing image files and the locale file. This difference affords translation of the SafeGNV version, if desired.
 
-• City72 currently assumes that the site you are creating is for a city. Since all of the text is editable, OAK72 could more readily be adapted for a county, organization or other community.
+• The Cloudinary add-on is not used on safeGNV. However, the add-on is still referenced in the code, in case you wish to enable the functionality. In other words, you do not need to pay for the premium add-on if you leave things as they are currently configured.
 
-• In OAK72, the main page headings are aligned in the lower right of the main image (instead of centered over it) to make room for faces in photos.
+• City72 currently assumes that the site you are creating is for a city. Since all of the text on SafeGNV is editable, SafeGNV could more readily be adapted for a county or other community.
 
-• OAK72 requires more technical know-how but offers more flexibility in terms of what can be customized. 
-
-• Much of the content on OAK72 is only applicable to Oakland (e.g. portraits of residents). Any team wishing to fork OAK72 into another community preparedness site should prioritize the gathering of relevant photography.
+• SafeGNV requires a little more technical know-how but offers much more flexibility in terms customization and localization. 
 
 
 ---
@@ -28,7 +26,7 @@ Included in this guide:
 
 Deploying to Heroku is the quickest way to launch an instance this site that you can adapt for your own community.
 
-1. [Fork OAK72](https://github.com/openoakland/oak72#fork-destination-box). 
+1. [Fork this repository](https://github.com/gnv-org/gnv#fork-destination-box). 
 
 2. From your new GitHub repository, deploy to heroku:  
 
@@ -43,7 +41,6 @@ The following free add-ons are automatically installed as part of set-up. Even t
 * **PostgreSQL** is the database for your application.
 * **SendGrid** sends emails from your application (e.g. the forgot password email).
 * **NewRelic** monitors your application performance
-* **Cloudinary** resizes, crops and then stores the images in your application.
 
 ## Configure the recover password host redirection:
 

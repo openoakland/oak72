@@ -2,75 +2,75 @@
 = javascript_include_tag "cms/custom_quick_guide_modal"
 .main-content.plan
   .screen-intro
-    %p.screen-info Select a pre-populated Quick Guide—featuring Before, During, and After tips—so residents know how to get prepared for the types of emergencies that might be relevant for your city. Or, write your own.
-    .action-area
-      %a.btn.btn-primary.ladda-button.js-save{:href => "#"} Save Changes
+    %p.screen-info Set the plan option.
+    -# .action-area
+    -#   %a.btn.btn-primary.ladda-button.js-save{:href => "#"} Save Changes
 
-  = form_for @city.plan, url: cms_plan_path, method: :put, html: { class: "js-form"} do |f|
-    .form-group
-      %label{:for => "community-image"} Community Image
-      %p.help-block Choose an evocative image of people gathering in your city.
-      - if !@city.plan.community_image.blank?
-        %img.preview{src: @city.plan.community_image}
-      - else
-        %img.preview{src: '/assets/placeholder-plan.jpg'}
-      = f.file_field(:community_image, :class => "form-control", :label => "Community Image")
-    .form-group
-      %label{:for => "select-plan"} What type of emergency is your area most at risk for?
-      - QuickGuide.order("id DESC").each do |q|
-        .radio
-          %label{:for => "plan_quick_guide_id_#{q.id}"}
-            = f.radio_button(:quick_guide_id, q.id)
-            %span
-              - unless q.custom
-                = q.title.capitalize
-              - else
-                = "Other (<span class='js-custom-quick-guide-name'>#{q.title.capitalize}</span>)".html_safe
-            - if q.custom
-              =link_to "Configure Plan", "#", :class => "js-custom-quick-guide"
-              %span.help-block.js-update-message.hidden
-                Save Changes to Update
+  -# = form_for @city.plan, url: cms_plan_path, method: :put, html: { class: "js-form"} do |f|
+    -# .form-group
+    -#   %label{:for => "community-image"} Community Image
+    -#   %p.help-block Choose an evocative image of people gathering in your city.
+    -#   - if !@city.plan.community_image.blank?
+    -#     %img.preview{src: @city.plan.community_image}
+    -#   - else
+    -#     %img.preview{src: '/assets/placeholder-plan.jpg'}
+    -#   = f.file_field(:community_image, :class => "form-control", :label => "Community Image")
+    -# .form-group
+    -#   %label{:for => "select-plan"} What type of emergency is your area most at risk for?
+    -#   - QuickGuide.order("id DESC").each do |q|
+    -#     .radio
+    -#       %label{:for => "plan_quick_guide_id_#{q.id}"}
+    -#         = f.radio_button(:quick_guide_id, q.id)
+    -#         %span
+    -#           - unless q.custom
+    -#             = q.title.capitalize
+    -#           - else
+    -#             = "Other (<span class='js-custom-quick-guide-name'>#{q.title.capitalize}</span>)".html_safe
+    -#         - if q.custom
+    -#           =link_to "Configure Plan", "#", :class => "js-custom-quick-guide"
+    -#           %span.help-block.js-update-message.hidden
+    -#             Save Changes to Update
 
-      .modal.fade.modal-container
-        .modal-dialog.modal-lg
-          .modal-content.custom-quick-guide
-            .modal-header
-              %button.close{"data-dismiss" => "modal", type: "button"}
-                %span{"aria-hidden" => "true"} ×
-                %span.sr-only Close
-              %h4.modal-title Write the steps for each section of your emergency plan: before, during, after.
-            .modal-body
-              = simple_form_for @quick_guide do |q|
-                = q.input :title, as: :string, label: 'Quick Guide Title', required: true
+    -#   .modal.fade.modal-container
+    -#     .modal-dialog.modal-lg
+    -#       .modal-content.custom-quick-guide
+    -#         .modal-header
+    -#           %button.close{"data-dismiss" => "modal", type: "button"}
+    -#             %span{"aria-hidden" => "true"} ×
+    -#             %span.sr-only Close
+    -#           %h4.modal-title Write the steps for each section of your emergency plan: before, during, after.
+    -#         .modal-body
+    -#           = simple_form_for @quick_guide do |q|
+    -#             = q.input :title, as: :string, label: 'Quick Guide Title', required: true
 
-                .form-group
-                  - tip_groups = [false, false, false]
-                  - step = 0
-                  = q.simple_fields_for :tips do |tf|
-                    - if !tip_groups[tf.object.moment_type_cd]
-                      - tip_groups[tf.object.moment_type_cd] = true
-                      - step = 1
-                      %h2
-                        =tf.object.moment_type.capitalize
-                    %h3 Step #{step}
-                    - step = step + 1
-                    = tf.input :title, as: :string, required: true, label: false
-                    = tf.input :description, as: :text, required: true, label: false, cols: "20";
+    -#             .form-group
+    -#               - tip_groups = [false, false, false]
+    -#               - step = 0
+    -#               = q.simple_fields_for :tips do |tf|
+    -#                 - if !tip_groups[tf.object.moment_type_cd]
+    -#                   - tip_groups[tf.object.moment_type_cd] = true
+    -#                   - step = 1
+    -#                   %h2
+    -#                     =tf.object.moment_type.capitalize
+    -#                 %h3 Step #{step}
+    -#                 - step = step + 1
+    -#                 = tf.input :title, as: :string, required: true, label: false
+    -#                 = tf.input :description, as: :text, required: true, label: false, cols: "20";
 
-            .modal-footer
-              %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
-              -# %button.btn.btn-primary{type: "button"} Ok
+    -#         .modal-footer
+    -#           %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
+    -#           -# %button.btn.btn-primary{type: "button"} Ok
 
 
-    - unless flash.empty?
-      .alert.alert-dismissable{:class => (flash.first[0] == :error)? "alert-danger" : "alert-success"}
-        %button.close(data-dismiss="alert" aria-hidden="true") &times;
-        %strong "#{ (flash.first[0] == :error)? "Error!" : "Saved!" }"
-        = flash.first[1]
+    -# - unless flash.empty?
+    -#   .alert.alert-dismissable{:class => (flash.first[0] == :error)? "alert-danger" : "alert-success"}
+    -#     %button.close(data-dismiss="alert" aria-hidden="true") &times;
+    -#     %strong "#{ (flash.first[0] == :error)? "Error!" : "Saved!" }"
+    -#     = flash.first[1]
 
-    .form-actions
-      = content_tag :button, :type => :submit, :class => 'btn btn-primary js-save ladda-button' do
-        %span.ladda-label Save Changes
+    -# .form-actions
+    -#   = content_tag :button, :type => :submit, :class => 'btn btn-primary js-save ladda-button' do
+    -#     %span.ladda-label Save Changes
 
     .frontend-link
       %a{:href => "/plan"} View this page &raquo;

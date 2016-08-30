@@ -1,0 +1,43 @@
+/* Main colors */
+$dark-grey: #4D4D4D;
+$body-color: #9b9b9b;
+$body-light: #a2a2a2;
+$mid-grey: #b4b4b4;
+$med-grey: #666;
+$text-grey: #7f7f7f;
+$light-grey: #e6e6e6;
+$subtle-grey: #eaeaea;
+$highlight: #FBB82a;
+$highlight-dark: #F15A24;
+$super-orange: #F57026;
+
+/* Fonts options */
+$font-regular:'HelveticaNeueLT-Roman';
+$font-medium:'HelveticaNeueLT-Medium';
+$font-bold:'HelveticaNeueLT-Bold';
+$h1-default-size: 3.56rem;
+$h1-mobile-size: 2.2rem;
+
+/* Icons */
+$arrow: 'A';
+$hands: 'C';
+$first-aid: 'D';
+$phone: 'E';
+$airbnb-icn: 'F';
+$twitter-icn: 'G';
+$facebook-icn: 'H';
+$drive-icn: ',';
+$neighbors-icn: '.';
+$nixle-icn: ';';
+$video-play: 'I';
+
+/* Managing custom grid */
+
+$mobile-breakpoint-width: 955px;
+$left-column-width: 26.5%;
+$right-column-width: 73.5%;
+
+/* Background on mobile */
+
+$background-drop-distance: 30px;
+$background-herobox-height: 350px;

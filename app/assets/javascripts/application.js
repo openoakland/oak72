@@ -24,5 +24,7 @@
 //= require popups
 //= require cors
 //= require header
+//= require mobile
 //= require retina_responsive
 //= require init
+//= require my_tab_switcher

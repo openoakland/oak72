@@ -2,12 +2,16 @@
 = javascript_include_tag "home"
 .main-container.plan
   = render :partial => "partials/header"
-  .opening.em-plan{:style => "background-image: url(#{"assets/static/plan-main.jpg"})"}
-    %h1
-      = t(:make_a_plan_with_your_people)
-    %div
-      %p
-        = t(:emergency_planning)
+
+  .myrow
+    .opening.explain-text
+      %div
+        %p
+          = t(:emergency_planning)
+    .opening.hero.em-plan{:style => "background-image: url(#{"assets/static/plan-main.jpg"})"}
+      %h1.make-a-plan
+        = t(:make_a_plan_with_your_people)
+
   .meet-up
     %h2
       = t(:set_up)
@@ -34,41 +38,27 @@
     %h2
       = t(:learn_tips)
     %p
-      = t(:read_and_print)
+      = t(:read_and_print_html, link:"https://www.ready.gov/hurricanes")
     .slider-header
       %ul.basics-tabs
         - unless @before_tips.empty?
           %li.active
-            %a.trigger-before{href:"#tab-before"} Before<span class="event-name"> a #{@quick_guide.title}</span>
-        %li{:class => (@before_tips.empty?)? "active": ""}
-          %a.trigger-during{href:"#tab-during"} During<span class="event-name"> a #{@quick_guide.title}</span>
+            %a.trigger-before{href:"#tab-before"} Before<span class="event-name"> a Hurricane</span>
+        %li{:class => (@during_tips.empty?)? "active": ""}
+          %a.trigger-during{href:"#tab-during"} During<span class="event-name"> a Hurricane</span>
         %li
-          %a.trigger-after{href:"#tab-after"} After<span class="event-name"> a #{@quick_guide.title}</span>
+          %a.trigger-after{href:"#tab-after"} After<span class="event-name"> a Hurricane</span>
       %a.quick-list-trigger{href:"quick_guide"} Print Guide
     .slider-body
-      - unless @before_tips.empty?
-        .slider-before
+      // YAML coded plan widget
+      - [:before, :during, :after].each do |section_name|
+        %div{class: "slider-#{section_name}"}
           %ol.slider.quick-guide
-            - @before_tips.each do |tip|
+            - [1,2,3].each do |section_index|
               %li
                 %h2
-                  = tip.title.html_safe
+                  = t(yaml_key_creator(section_name, section_index, '_title')).html_safe
                 %p
-                  = tip.description.html_safe
-      .slider-during
-        %ol.slider.quick-guide
-          - @during_tips.each do |tip|
-            %li
-              %h2
-                = tip.title.html_safe
-              %p
-                = tip.description.html_safe
-      .slider-after
-        %ol.slider.quick-guide
-          - @after_tips.each do |tip|
-            %li
-              %h2
-                = tip.title.html_safe
-              %p
-                = tip.description.html_safe
+                  = t(yaml_key_creator(section_name, section_index, '_description')).html_safe
+
   = render :partial => "partials/footer"

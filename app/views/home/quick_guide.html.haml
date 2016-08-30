@@ -1,42 +1,26 @@
 = provide(:title, "#{@quick_guide.title} Quick Guide")
 .main-container.quick-guide-page
-	= render :partial => "partials/header"
-	.basics
-		- unless @quick_guide.before_tips.empty?
-			%h2.event-before Before a #{@quick_guide.title}.
-			%ol.quick-guide.list-before
-				- @quick_guide.before_tips.each do |tip|
-					%li
-						%h2
-							= tip.title.html_safe
-						%p
-							= tip.description.html_safe
-		- unless @quick_guide.during_tips.empty?
-			%h2 During a #{@quick_guide.title}.
-			%ol.quick-guide
-				- @quick_guide.during_tips.each do |tip|
-					%li
-						%h2
-							= tip.title.html_safe
-						%p
-							= tip.description.html_safe
-		- unless @quick_guide.after_tips.empty?
-			%h2.event-after After a #{@quick_guide.title}.
-			%ol.quick-guide.second
-				- @quick_guide.after_tips.each do |tip|
-					%li
-						%h2
-							= tip.title.html_safe
-						%p
-							= tip.description.html_safe
-		.quick-guide-share
-			%ul.share-options
-				%li
-					%a.twitter{onClick: "twitterShare()"} Twitter
-				%li
-					%a.facebook{onClick: "facebookShare()"} Facebook
-				%li
-					%a.print{onClick: "window.print()"} Print
-				%li
-					%a.email{href: "mailto:someone@example.com?Subject=SF-72%20Quick%20Guide"} Share
-			%p Spread the word!<br />There’s safety in numbers.
+  = render :partial => "partials/header"
+  .basics
+    - unless @quick_guide.before_tips.empty?
+      - [:before, :during, :after].each do |section_name|
+        %h2{class: "event-#{section_name}"}
+          = t("#{section_name}_a_emergency".to_sym) + "."
+        %ol.quick-guide{class: "list-#{section_name}"}
+          - [1,2,3].each do |section_index|
+            %li
+              %h2
+                = t(yaml_key_creator(section_name, section_index, '_title')).html_safe
+              %p
+                = t(yaml_key_creator(section_name, section_index, '_description')).html_safe
+      .quick-guide-share
+        %ul.share-options
+          %li
+            %a.twitter{onClick: "twitterShare()"} Twitter
+          %li
+            %a.facebook{onClick: "facebookShare()"} Facebook
+          %li
+            %a.print{onClick: "window.print()"} Print
+          %li
+            %a.email{href: "mailto:someone@example.com?Subject=SF-72%20Quick%20Guide"} Share
+        %p Spread the word!<br />There’s safety in numbers.

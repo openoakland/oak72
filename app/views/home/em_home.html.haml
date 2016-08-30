@@ -19,11 +19,11 @@
         .alert-info
           %h3
             = t(:in_an_emergency)
-          -# %p
-          -#   = t(:you_will_find)
+          %p
+            = t(:you_will_find)
       .map-actions
-        -# %a.map-tips-trigger{href:"#"}
-        -#   = t(:map_guide)
+        %a.map-tips-trigger{href:"#"}
+          = t(:map_guide)
         %a.expand-map-trigger{href:"#"}
           = t(:expand_map)
       / .em-quick-guide-trigger
@@ -54,28 +54,28 @@
   .tw-tabs-container
     %ul.tw-tabs
       %li.active#citizen-updates-tab
-        %a{href:"#tab-citizen-updates"}
+        %a{href:"#tab-one"}
           %h3
             = t(:official_updates)
       %li#official-reports-tab
-        %a{href:"#tab-official-reports"}
+        %a{href:"#tab-two"}
           %h3
             = t(:partner_updates)
       %li#transportation-updates-tab
-        %a{href:"#tab-service-status"}
+        %a{href:"#tab-three"}
           %h3
             = t(:transportation_updates)
     %ul.tw-tabs-mobile
       %li.active
-        %a{href:"#tab-citizen-updates"}
+        %a{href:"#tab-one"}
           %h3
             = t(:official)
       %li
-        %a{href:"#tab-official-reports"}
+        %a{href:"#tab-two"}
           %h3
             = t(:partner)
       %li
-        %a{href:"#tab-service-status"}
+        %a{href:"#tab-three"}
           %h3
             = t(:transportation)
   .main-container.updates-wrapper

@@ -1,35 +1,144 @@
 /* HOME */
 
-
-.home .page-intro {
-	@include icon($highlight,3.5rem,$arrow,#FFF,490px,45px);
-	position: relative;
+.mybold {
+  font-family: $font-bold;
+  font-weight: bold;
 }
 
-.home .page-intro .big-title {
-	@include retina-image(/assets/static/home-main, 1020px 538px, jpg);
+.myrow {
+  @include row();
+}
+
+.col-xs-12 {
+  @include span-columns(12);
+}
+
+.col-xs-6 {
+  @include span-columns(6);
+}
+
+.col-xs-9 {
+  @include span-columns(9);
+}
+
+.col-xs-3 {
+  @include span-columns(3);
+}
+
+.right-flush {
+  text-align: right;
+}
+
+.home-updates-wrapper {
+	height: 600px;
+}
+
+@media (max-width: $mobile-breakpoint-width) {
+  .home-updates-wrapper.mobile-home {
+    height: 300px;
+  }
+}
+
+.home .page-intro {
+  @include icon($highlight,3.5rem,$arrow,#FFF,320px,45px);
+  position: relative;
+}
+
+
+
+.home .page-intro .home-title {
+	@include retina-image(/assets/static/home-main, 1020px 372px, jpg);
 	background-position: left top;
 	text-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
 }
 
-.home .page-intro .big-title {
-
+.home .page-intro .home-title {
+  @media (max-width: $mobile-breakpoint-width) {
 	h1 {
-		font-size: 3.5rem;
-		margin-top: 3rem;
-		text-shadow: 0px 0px 11px rgba(0,0,0,0.63);
-		padding: 0 5rem;
+	  font-size: 2.2rem;
+	  line-height: 2.5rem;
+	  text-shadow: 0px 0px 11px rgba(0,0,0,0.63);
+	  padding: 2rem 3rem;
 	}
-
+  }
+  @media (min-width: $mobile-breakpoint-width) {
+	h1 {
+	  font-size: 3.5rem;
+	  text-shadow: 0px 0px 11px rgba(0,0,0,0.63);
+	  padding: 4rem 5rem;
+	}
+  }
+  
 }
 
-.questions {
-	background-image: url("/assets/static/clock.svg");
-	background-repeat: no-repeat;
-	background-position: 730px 100px;
-	@include row();
-	padding: 0 30px;
+.home-title {
+		background: url() no-repeat left top;
+		width: 100%;
+		height: 372px;
+		text-align: center;
+		padding-top: 4rem;
+		text-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
 
+		h1 {
+			font-family: $font-bold;
+			font-size: 6.25rem;
+			margin: 0;
+			line-height: 1;
+			color: #FFF;
+		}
+
+		span {
+			display: block;
+			margin: 0.6rem 0 0;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			color: #FFF;
+		}
+
+	strong {
+		display: block;
+		font-family: $font-regular;
+	}
+
+	h2 {
+		margin: 1.6rem 0 0 0;
+		color: $dark-grey;
+		font-family: $font-bold;
+		line-height: 2.3rem;
+	}
+
+	p {
+		@include intro-paragraph;
+		margin: 0.1rem 0 1rem 0;
+		width: 44rem;
+	}
+}
+
+
+
+
+.questions {
+  @include row();
+  padding: 0 30px 20px 30px;
+
+	h2 {
+	  color: $highlight;
+	  line-height: 2.4rem;
+	  margin: 3.75rem 0 1rem;
+	  text-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+	}
+
+	span {
+		font-size: 1.2rem;
+	}
+}
+@media (max-width: $mobile-breakpoint-width) {
+  .questions h2 {
+    margin-top: 0;
+    line-height: 2.4rem;
+  }
+}
+.questions {
 	ul {
 		@include row();
 
@@ -37,15 +146,9 @@
 			@include span-columns(6);
 			margin-bottom: 80px;
 
-			h2 {
-				color: $highlight;
-				line-height: 1rem;
-				margin-top: 3.75rem;
-				text-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
-			}
 
 			span {
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 				@include span-columns(11);
 			}
 		}
@@ -53,24 +156,88 @@
 }
 
 .connection {
+  .map-button {
+    position: absolute;
+    left: 49%;
+    top: 66%;
+    background-color: $super-orange;
+    padding: 20px 40px;
+    border-radius: 0px;
+    min-width: 20%;
+    font-size: 2rem;
+    color: white;
+    font-family: "HelveticaNeueLT-Bold";
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a hover {
+    	color: white;
+    	text-decoration: underline;
+    }
+  }
+  @media (max-width: $mobile-breakpoint-width) {
+    .map-button {
+      left: 8%;
+      width: 84%;
+      height: 6.7rem;
+      line-height: 0.1;      
+      font-size: 1.6rem;
+      bottom: 10%;
+      text-align: center;
+      vertical-align: middle;
+      &:before {
+	content: ' ';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+      }
+    }
+  }
 	@include row();
-	@include retina-image(/assets/static/home-secondary, 683px 420px, jpg);
+
 	background-position: top right;
 	background-repeat: no-repeat;
 	position: relative;
 
-	div {
-		@include span-columns(4.2);
-		@include icon($highlight,3.5rem,$arrow,#FFF,370px,290px);
+	.home-map {
+
+	  float: right;
+
+	  width: 68.2%;
+	  @media (max-width: $mobile-breakpoint-width) {
+	    width: 100%;
+	  }
+
+	  height: 473px;
+	  @media (max-width: $mobile-breakpoint-width) {
+	    height: 448px;
+	  }
+	  overflow: hidden;
+	  position: relative;
+
+	}
+
+	.down-arrow {
+		@include span-columns(4);
+		margin-right: 0;
 		color: #FFF;
 		background-color: $highlight;
 		padding: 0 30px;
-		height: 420px;
+		height: 468px;
+
+		@media (max-width: $mobile-breakpoint-width) {
+		color: $dark-grey;
+			}
 
 		h2 {
 			font-size: 2.05rem;
 			margin: 2rem 0 1rem;
 			line-height: 2.7rem;
+			@media (max-width: $mobile-breakpoint-width) {
+			  display: none;
+			}
 		}
 
 		span {
@@ -88,7 +255,7 @@
 	h1 {
 		color: $dark-grey;
 		padding: 0 30px;
-		margin: 6.5rem 0 5rem;
+		margin: 5rem 0 5.5rem 0;
 		font-family: $font-bold;
 		line-height: 2.65rem;
 	}
@@ -146,7 +313,7 @@
 			}
 
 			.learn-connect {
-				@include retina-image(/assets/static/home1_3, 337px 345px);
+				@include retina-image(/assets/static/homeb-1, 337px 345px, jpg);
 				@include icon(#FFF,3.5rem,$hands,$highlight,-50px,45px);
 			}
 			.learn-supplies {

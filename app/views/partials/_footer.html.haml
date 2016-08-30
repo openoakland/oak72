@@ -1,19 +1,25 @@
 .footer
 	.footer-top
-		%p.by-line Brought to you by #{@city.brought_by}, in partnership with the people of #{@city.name}. <a href="http://#{@city.agency_url}">#{@city.agency_url}</a>
+		%p.by-line
+			= t(:footer_text)
 	.footer-bottom
 		%ul.footer-links
 			%li.more
-				%h2 Find out more
+				%h2
+					= t(:find_out_more)
 				%ul
 					%li
-						%a{href:"/about"}About us
+						%a{href:"/about"}
+							= t(:about_us)
 					%li
-						%a{href:"mailto:#{@city.contact_email}"}Contact Us
+						%a{href:"mailto:#{@city.contact_email}"}
+							= t(:contact_us)
 					%li
-						%a{href:"http://toolkit.sf72.org/", target:"_blank"}City72 Toolkit
+						%a{href:"http://toolkit.sf72.org/", target:"_blank"}
+							= t(:city72_toolkit)
 			%li.resources
-				%h2 Resources and Partners
+				%h2
+					= t(:resources_and_partners)
 				%ul.resources-links
 					%li.resources-first
 						%ul
@@ -29,7 +35,8 @@
 										= affiliate.name
 
 			%li.social
-				%h2 Spread the word
+				%h2
+					= t(:spread_the_word)
 				%ul
 					<a href="https://twitter.com/share" class="twitter-share-button" data-url="#{root_url}">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 

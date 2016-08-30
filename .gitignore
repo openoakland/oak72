@@ -16,3 +16,4 @@
 
 /public/uploads
 /public/assets
+config/database.yml

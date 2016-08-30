@@ -7,6 +7,7 @@ class HomeController < ApplicationController
   before_filter :city_info
 
   def index
+    @emergency_data = EmergencyData.first
     @crisis_mode = Mode.is_crisis_mode
   end
 
@@ -14,8 +15,11 @@ class HomeController < ApplicationController
     @emergency_data = EmergencyData.first
   end
 
+  def home
+    @emergency_data = EmergencyData.first
+  end
+  
   def about
-    @render_captcha = MailHelper::posible_attack?
   end
 
   def connect
@@ -42,7 +46,7 @@ class HomeController < ApplicationController
     @kits = Kit.order(:id).all
   end
 
-  empty_methods :home, :our_manifesto
+  empty_methods :our_manifesto
 
   private
     def city_info

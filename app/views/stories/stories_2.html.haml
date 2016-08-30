@@ -1,0 +1,44 @@
+= provide(:title, 'View Stories')
+= stylesheet_link_tag    "jquery.modal", :media => "all"
+= javascript_include_tag "home"
+= javascript_include_tag "jquery.modal"
+= javascript_include_tag "video_modal"
+.main-container.stories
+  = render :partial => "partials/header"
+  %iframe{src: "https://www.youtube.com/embed/zEK1TqeYrno", frameborder: "0", allowfullscreen: true}
+
+  .intro
+    .personal-look
+      %h2
+        = t(:a_personal_look)
+      %p
+        = t(:watch_personal_stories)
+
+  - [1,2,3].each do |index|
+    .additional-stories
+      .video-frame
+        %iframe{src: "https://www.youtube.com/embed/zEK1TqeYrno", frameborder: "0", allowfullscreen: true}
+      .description-frame
+        .paragraph
+          .bold
+            = t("story_description_#{index}_name".to_sym)
+        .paragraph
+          .bold
+            = t("story_description_#{index}_area".to_sym)
+        .paragraph
+          = t("story_description_#{index}_blurb".to_sym)
+
+  .statement
+    .description
+      %h2
+        = t(:our_city)
+      %p
+        = t(:city_statement)
+    .quote
+      %p
+        = t(:we_believe)
+
+  = render :partial => "partials/footer"
+
+  .modal-container{ style: "width: 860px; height: 470px;"}
+    .modal-video
